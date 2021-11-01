@@ -20,12 +20,10 @@ const filterMenuRouter = routes => {
       return true;
     }
   });
-  console.log(menuRouters);
   return menuRouters || [];
 };
 
-const renderMenuItem = target => {
-  console.log(target);
+const renderMenuItem = target =>
   target.map(subMenu => {
     if (subMenu.childRoutes && !!subMenu.childRoutes.find(child => child.path && child.name)) {
       return (
@@ -33,7 +31,6 @@ const renderMenuItem = target => {
           key={subMenu.path}
           title={
             <div>
-              {/* {!!subMenu.icon && subMenu.icon} */}
               <span>{subMenu.name}</span>
             </div>
           }>
@@ -44,15 +41,12 @@ const renderMenuItem = target => {
     return (
       <Menu.Item key={subMenu.path}>
         <Link to={subMenu.path}>
-          <span>
-            {/* {!!subMenu.icon && subMenu.icon} */}
-            <span>{subMenu.name}</span>
-          </span>
+          <span>{subMenu.name}</span>
         </Link>
       </Menu.Item>
     );
   });
-};
+
 const SilderMenu = routes => {
   const { pathname } = useLocation();
   const { globalStore } = appStores();
@@ -61,7 +55,7 @@ const SilderMenu = routes => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    const menusItem = filterMenuRouter(config);
+    const menusItem = filterMenuRouter(config[1].childRoutes);
     setMenus(menusItem);
   }, []);
 
@@ -72,7 +66,8 @@ const SilderMenu = routes => {
 
   const getSelectedKeys = useMemo(() => {
     const list = pathname.split('/').splice(1);
-    return list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
+    let newArray = list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
+    return newArray.slice(-1);
   }, [pathname]);
 
   const onOpenChange = keys => {
@@ -96,7 +91,7 @@ const SilderMenu = routes => {
         theme="dark"
         style={{ paddingLeft: 0, marginBottom: 0 }}
         className={style.main_menu}
-        openKeys={openKeys}
+        // openKeys={openKeys}
         onOpenChange={onOpenChange}
         selectedKeys={getSelectedKeys}>
         {renderMenuItem(menus)}

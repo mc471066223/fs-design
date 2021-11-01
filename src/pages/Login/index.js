@@ -14,17 +14,25 @@ const LoginPage = () => {
     message.success('登录成功,即将跳转....', 22);
     setTimeout(() => {
       history.push('/');
-    }, 2000);
+    }, 1000);
   };
 
   return (
     <div className={style.page_login}>
+      <div className={style.login_title}>欢迎登录 {globalStores.appTitle}</div>
       <Form onFinish={handleSubmit} className={style.login_form}>
         <Form.Item name="username" rules={[{ required: true, message: '请输入用户名' }]}>
-          <Input prefix={<UserOutlined style={{ color: 'rgba(0,0,0,25' }} />} placeholder="用户名" />
+          <Input
+            prefix={<UserOutlined style={{ color: 'rgba(0,0,0,25' }} />}
+            placeholder="用户名"
+          />
         </Form.Item>
         <Form.Item name="password" rules={[{ required: true, message: '请输入密码' }]}>
-          <Input prefix={<LockOutlined style={{ color: 'rgba(0,0,0,25' }} />} type="password" placeholder="密码" />
+          <Input
+            prefix={<LockOutlined style={{ color: 'rgba(0,0,0,25' }} />}
+            type="password"
+            placeholder="密码"
+          />
         </Form.Item>
         <Form.Item name="remeber" valuePropName="checked" initialValue>
           <Checkbox>记住我</Checkbox>

@@ -1,6 +1,6 @@
 import React, { lazy } from 'react';
 import BasicLayout from '@/layouts/BasicLayout';
-import BlankLayout from '@/layouts/BlankLayout';
+// import BlankLayout from '@/layouts/BlankLayout';
 
 const config = [
   // {
@@ -29,37 +29,23 @@ const config = [
         name: 'home主页',
         component: lazy(() => import('@/pages/Home'))
       },
-      // {
-      //   path: '/form',
-      //   name: '表单',
-      //   component: lazy(() => import('@/pages/formDemo'))
-      // }
       {
         path: '/home/exception/403',
         name: '403',
         component: lazy(() => import('@/pages/Excepetion/403'))
       },
       {
-        path: '/exception/404',
+        path: '/home/exception/404',
         name: '404',
         component: lazy(() => import('@/pages/Excepetion/404'))
       },
       {
-        path: '/exception/500',
+        path: '/home/exception/500',
         name: '500',
         component: lazy(() => import('@/pages/Excepetion/500'))
       }
     ]
   }
-  // {
-  //   path: '/exception',
-  //   name: '异常页',
-  //   meta: {
-  //     hide: false
-  //   },
-  //   component: BasicLayout, //基本布局
-  //   childRoutes: []
-  // },
   // {
   //   path: '/',
   //   exact: true,
