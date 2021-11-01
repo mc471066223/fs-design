@@ -19,16 +19,17 @@
   }
   .login_form {
     position: relative;
-    padding: 30px;
+    padding:30px ;
     width: 400px;
     box-shadow: 0 0 10px 0 rgb(42, 93, 157);
     border-radius: 6px;
     background: linear-gradient(rgba(75, 128, 186, 0.86), rgba(192, 207, 230, 0.8));
   }
-  .login-form-forgot {
+  .login_form_forgot {
     float: right;
   }
-  .login-form-button {
+  .login_form_button {
     width: 100%;
+    margin-top: 20px;
   }
 }

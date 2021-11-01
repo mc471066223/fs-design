@@ -66,8 +66,7 @@ const SilderMenu = routes => {
 
   const getSelectedKeys = useMemo(() => {
     const list = pathname.split('/').splice(1);
-    let newArray = list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
-    return newArray.slice(-1);
+    return list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
   }, [pathname]);
 
   const onOpenChange = keys => {

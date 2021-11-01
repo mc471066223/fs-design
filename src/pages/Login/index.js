@@ -11,9 +11,9 @@ const LoginPage = () => {
   const { globalStore } = appStores();
 
   const handleSubmit = values => {
-    message.success('登录成功,即将跳转....', 22);
     setTimeout(() => {
-      history.push('/');
+      message.success('登录成功,即将跳转....');
+      history.push('/home');
     }, 1000);
   };
 
@@ -35,13 +35,15 @@ const LoginPage = () => {
           />
         </Form.Item>
         <Form.Item name="remeber" valuePropName="checked" initialValue>
-          <Checkbox>记住我</Checkbox>
-          <a className="login-form-forgot" href="/#">
-            忘记密码
-          </a>
-          <Button type="primary" htmlType="submit" className="login-form-button">
-            登录
-          </Button>
+          <div className={style.login_checkbox}>
+            <Checkbox>记住我</Checkbox>
+            <a className={style.login_form_forgot} href="/#">
+              忘记密码
+            </a>
+            <Button type="primary" htmlType="submit" className={style.login_form_button}>
+              登录
+            </Button>
+          </div>
         </Form.Item>
       </Form>
     </div>

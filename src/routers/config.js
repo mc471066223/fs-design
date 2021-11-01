@@ -30,17 +30,17 @@ const config = [
         component: lazy(() => import('@/pages/Home'))
       },
       {
-        path: '/home/exception/403',
+        path: '/exception/403',
         title: '403',
         component: lazy(() => import('@/pages/Excepetion/403'))
       },
       {
-        path: '/home/exception/404',
+        path: '/exception/404',
         title: '404',
         component: lazy(() => import('@/pages/Excepetion/404'))
       },
       {
-        path: '/home/exception/500',
+        path: '/exception/500',
         title: '500',
         component: lazy(() => import('@/pages/Excepetion/500'))
       }
