@@ -1,0 +1,10 @@
+.main_layout {
+  height: 100vh;
+  .main_layout_right {
+    height: 100vh;
+  }
+  .main_layout_content{
+    height: 100vh;
+    overflow: auto;
+  }
+}
