@@ -8,7 +8,7 @@ import style from './index.module.scss';
 
 const LoginPage = () => {
   const history = useHistory();
-  const { globalStores } = appStores();
+  const { globalStore } = appStores();
 
   const handleSubmit = values => {
     message.success('登录成功,即将跳转....', 22);
@@ -19,7 +19,7 @@ const LoginPage = () => {
 
   return (
     <div className={style.page_login}>
-      <div className={style.login_title}>欢迎登录 {globalStores.appTitle}</div>
+      <div className={style.login_title}>欢迎登录 {globalStore.appTitle}</div>
       <Form onFinish={handleSubmit} className={style.login_form}>
         <Form.Item name="username" rules={[{ required: true, message: '请输入用户名' }]}>
           <Input

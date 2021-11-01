@@ -11,7 +11,7 @@ const config = [
   //子菜单路由
   {
     path: '/login', //路由路径
-    name: '登录页', //菜单名称(不设置,则不展示在菜单栏中)
+    title: '登录页', //菜单名称(不设置,则不展示在菜单栏中)
     meta: {
       hide: true
     },
@@ -23,35 +23,28 @@ const config = [
       hide: false
     },
     component: BasicLayout, //基本布局
-    childRoutes: [
+    routes: [
       {
         path: '/home',
-        name: 'home主页',
+        title: 'home主页',
         component: lazy(() => import('@/pages/Home'))
       },
       {
         path: '/home/exception/403',
-        name: '403',
+        title: '403',
         component: lazy(() => import('@/pages/Excepetion/403'))
       },
       {
         path: '/home/exception/404',
-        name: '404',
+        title: '404',
         component: lazy(() => import('@/pages/Excepetion/404'))
       },
       {
         path: '/home/exception/500',
-        name: '500',
+        title: '500',
         component: lazy(() => import('@/pages/Excepetion/500'))
       }
     ]
   }
-  // {
-  //   path: '/',
-  //   exact: true,
-  //   redirect: '/home'
-  // }
-  // ]
-  // }
 ];
 export default config;

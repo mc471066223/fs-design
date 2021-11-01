@@ -12,8 +12,8 @@ const filterMenuRouter = routes => {
     if (route.meta && route.meta.hide) {
       return false;
     } else {
-      if (route.childRoutes && route.childRoutes.length) {
-        route.childRoutes = filterMenuRouter(route.childRoutes);
+      if (route.routes && route.routes.length) {
+        route.routes = filterMenuRouter(route.routes);
       } else if (route.routes && route.routes.length === 0) {
         return false;
       }
@@ -25,23 +25,23 @@ const filterMenuRouter = routes => {
 
 const renderMenuItem = target =>
   target.map(subMenu => {
-    if (subMenu.childRoutes && !!subMenu.childRoutes.find(child => child.path && child.name)) {
+    if (subMenu.routes && !!subMenu.routes.find(child => child.path && child.name)) {
       return (
         <Menu.SubMenu
           key={subMenu.path}
           title={
             <div>
-              <span>{subMenu.name}</span>
+              <span>{subMenu.title}</span>
             </div>
           }>
-          {renderMenuItem(subMenu.childRoutes)}
+          {renderMenuItem(subMenu.routes)}
         </Menu.SubMenu>
       );
     }
     return (
       <Menu.Item key={subMenu.path}>
         <Link to={subMenu.path}>
-          <span>{subMenu.name}</span>
+          <span>{subMenu.title}</span>
         </Link>
       </Menu.Item>
     );
@@ -55,7 +55,7 @@ const SilderMenu = routes => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    const menusItem = filterMenuRouter(config[1].childRoutes);
+    const menusItem = filterMenuRouter(config[1].routes);
     setMenus(menusItem);
   }, []);
 
