@@ -34,7 +34,7 @@ const config = [
           {
             path: '/global/space',
             title: '间距 Space',
-            component: lazy(() => import('@/pages/Home'))
+            component: lazy(() => import('@/pages/Global/Space'))
           },
           {
             path: '/global/color',
