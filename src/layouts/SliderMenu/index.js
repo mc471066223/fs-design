@@ -56,7 +56,7 @@ const SilderMenu = routes => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    const menusItem = filterMenuRouter(config[1].routes);
+    const menusItem = filterMenuRouter(config.slice(0,3));
     console.log(menusItem);
     setMenus(menusItem);
   }, []);
@@ -107,7 +107,8 @@ const SilderMenu = routes => {
           return <div style={{ display: 'none' }}></div>;
         }}
         onOpenChange={onOpenChange}
-        selectedKeys={getSelectedKeys}>
+        selectedKeys={getSelectedKeys}
+        >
         {renderMenuItem(menus)}
       </Menu>
     </Layout.Sider>
