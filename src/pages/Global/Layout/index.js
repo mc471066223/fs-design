@@ -12,10 +12,10 @@ function Layout() {
 
   return (
     <div>
-      <div className={style.page_title}>布局 layout</div>
-      <div className={style.page_title_small}>
-        页面构成、统一画板、布局适配、网格单位、栅格、常用模度
-      </div>
+      <BasicTitle
+        pageTitle="布局 layout"
+        pageStitle="页面构成、统一画板、布局适配、网格单位、栅格、常用模度"
+      />
       <div className={style.page_content}>
         <BasicTitle title="页面构成" content="设计师理解的页面构成，内容+间距" subTitle="盒子理论">
           <div className={style.page_content_p}>
