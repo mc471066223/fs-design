@@ -19,31 +19,87 @@ const config = [
   },
   {
     path: '/',
-    meta: {
-      hide: false
-    },
     component: BasicLayout, //基本布局
     routes: [
       {
-        path: '/home',
-        title: 'home主页',
-        component: lazy(() => import('@/pages/Home'))
+        path: '/global',
+        title: '全局样式',
+        component: lazy(() => import('@/pages/Global/Layout')),
+        routes: [
+          {
+            path: '/global/layout',
+            title: '布局 Layout',
+            component: lazy(() => import('@/pages/Global/Layout'))
+          },
+          {
+            path: '/global/space',
+            title: '间距 Space',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/color',
+            title: '色彩 Color',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/typorgraphy',
+            title: '字体 Typorgraphy',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/shadow',
+            title: '阴影 Shadow',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/border',
+            title: '边框 Border',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/Button',
+            title: '按钮 Button',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/Icon',
+            title: '图标 Icon',
+            component: lazy(() => import('@/pages/Home'))
+          }
+        ]
       },
       {
-        path: '/exception/403',
-        title: '403',
-        component: lazy(() => import('@/pages/Excepetion/403'))
-      },
-      {
-        path: '/exception/404',
-        title: '404',
-        component: lazy(() => import('@/pages/Excepetion/404'))
-      },
-      {
-        path: '/exception/500',
-        title: '500',
-        component: lazy(() => import('@/pages/Excepetion/500'))
+        path: '/navigation',
+        title: '导航',
+        component: lazy(() => import('@/pages/Home')),
+        routes: [
+          {
+            path: '/navigation/website',
+            title: '页面导航 Website Navigation',
+            component: lazy(() => import('@/pages/Home'))
+          },
+          {
+            path: '/global/content',
+            title: '内容导航 Content Navigation',
+            component: lazy(() => import('@/pages/Home'))
+          }
+        ]
       }
+      // {
+      //   path: '/exception/403',
+      //   title: '403',
+      //   component: lazy(() => import('@/pages/Excepetion/403'))
+      // },
+      // {
+      //   path: '/exception/404',
+      //   title: '404',
+      //   component: lazy(() => import('@/pages/Excepetion/404'))
+      // },
+      // {
+      //   path: '/exception/500',
+      //   title: '500',
+      //   component: lazy(() => import('@/pages/Excepetion/500'))
+      // }
     ]
   }
 ];

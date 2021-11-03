@@ -1,0 +1,463 @@
+@import '../../../styles/common.module.scss';
+.page_title {
+  color: $color19;
+  height: $lh34;
+  line-height: $lh34;
+  font-size: $font26;
+  font-weight: bold;
+  margin-bottom: $mg20;
+  &_small {
+    height: $lh24;
+    line-height: $lh24;
+    color: $color64;
+    margin-bottom: $mg80;
+  }
+}
+
+.page_content {
+  color: $color64;
+  &_title {
+    color: $color19;
+    height: $lh30;
+    line-height: $lh30;
+    font-size: $font20;
+    font-weight: bold;
+    margin-bottom: $mg20;
+  }
+  &_subtitle {
+    color: $color19;
+    line-height: $lh26;
+    height: $lh26;
+    font-size: $font16;
+    margin-bottom: $mg20;
+  }
+  &_p {
+    height: 144px;
+    line-height: $lh24;
+    font-size: $font14;
+    font-family: MicrosoftYaHei;
+    margin-bottom: $mg40;
+  }
+  &_fx1title {
+    height: $lh24;
+    height: $lh24;
+    font-size: $font14;
+    font-family: MicrosoftYaHei;
+    margin-bottom: $mg20;
+  }
+  &_fx2title {
+    height: $lh26;
+    height: $lh26;
+    font-size: $font16;
+    font-family: MicrosoftYaHei;
+    margin-bottom: $mg20;
+  }
+  &_fx1 {
+    width: 1200px;
+    height: 280px;
+    padding: 48px 40px;
+    background-color: $colore5;
+    box-sizing: border-box;
+    margin-bottom: 66px;
+    &_box {
+      padding: $mg20;
+      box-sizing: border-box;
+      background-color: $colorcc;
+    }
+    &_item {
+      height: $lh20;
+      line-height: $lh20;
+      font-size: $font14;
+    }
+    &_bgc {
+      height: $lh16;
+      line-height: $lh16;
+      background-color: $colorff;
+    }
+  }
+  &_fx2 {
+    width: 1200px;
+    height: 280px;
+    padding: 48px 40px;
+    background-color: $colore5;
+    margin-bottom: 66px;
+    &_box {
+      padding: $mg20;
+      height: 184px;
+      background: $colorff;
+      border: 2px solid $colorcc;
+      box-sizing: border-box;
+    }
+    &_border {
+      height: 144px;
+      box-sizing: border-box;
+      border: 2px dashed $colorcc;
+    }
+    &_item {
+      height: $lh36;
+      line-height: $lh36;
+      font-size: $font14;
+      font-family: MicrosoftYaHei;
+    }
+    &_bgc1 {
+      position: relative;
+      background: rgba(25, 25, 26, 0.4);
+    }
+    &_bgc1 span {
+      position: absolute;
+      top: -8px;
+    }
+    &_bgc2 {
+      background: rgba(25, 25, 26, 0.3);
+    }
+    &_bgc3 {
+      background: rgba(25, 25, 26, 0.2);
+    }
+    &_bgc4 {
+      background: rgba(25, 25, 26, 0.1);
+    }
+    &_bgc2,
+    &_bgc3,
+    &_bgc4 {
+      position: relative;
+      span {
+        position: absolute;
+        display: inline-block;
+        bottom: -8px;
+        left: 0;
+      }
+    }
+  }
+  &_fx3 {
+    width: 1200px;
+    height: 402px;
+    padding: 48px 40px;
+    background-color: $colore5;
+    margin-bottom: 66px;
+    &_box {
+      height: 306px;
+      background: $colorf7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    &_border {
+      background: $colorff;
+      box-sizing: border-box;
+      width: 773px;
+      height: 306px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    &_line1 {
+      height: $lh24;
+      line-height: $lh24;
+      margin-top: -28px;
+      margin-bottom: 20px;
+      position: relative;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 350px;
+        height: 1px;
+        background-color: $colorc0;
+        top: 12px;
+        left: -362px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 350px;
+        height: 1px;
+        background-color: $colorc0;
+        top: 12px;
+        right: -362px;
+      }
+    }
+    &_gun1 {
+      height: 15px;
+      position: absolute;
+      border-left: 1px solid $colorc0;
+      top: 122px;
+      left: 0;
+    }
+    &_gun2 {
+      height: 15px;
+      position: absolute;
+      border-right: 1px solid $colorc0;
+      top: 122px;
+      right: 0;
+    }
+    &_line2 {
+      top: 50%;
+      left: 50%;
+      height: $lh24;
+      line-height: $lh24;
+      margin-left: -22px;
+      position: absolute;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 523px;
+        height: 1px;
+        background-color: $colorc0;
+        top: 12px;
+        left: -536px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 523px;
+        height: 1px;
+        background-color: $colorc0;
+        top: 12px;
+        right: -536px;
+      }
+    }
+    &_gun3 {
+      border-right: 1px solid $colorc0;
+      height: 15px;
+      position: absolute;
+      top: 157px;
+      left: 0;
+    }
+    &_gun4 {
+      border-left: 1px solid $colorc0;
+      height: 15px;
+      position: absolute;
+      top: 157px;
+      right: 0;
+    }
+  }
+  &_fx4 {
+    width: 1200px;
+    height: 402px;
+    padding: 48px 40px;
+    background-color: $colore5;
+    margin-bottom: 66px;
+    display: flex;
+    &_left {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 244px;
+      color: $colorff;
+      font-size: $font14;
+      background-color: $color64;
+    }
+    &_right {
+      flex: 1;
+      height: 100%;
+      background-color: $colorf7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: $color19;
+      font-size: $font14;
+      position: relative;
+    }
+    &_content {
+      width: 33px;
+      position: relative;
+      margin-left: -45px;
+      &::before {
+        content: '';
+        position: absolute;
+        width: 376px;
+        height: 1px;
+        background-color: $colorc0;
+        top: 7px;
+        left: -398px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 420px;
+        height: 1px;
+        background-color: $colorc0;
+        top: 7px;
+        right: -444px;
+      }
+    }
+    &_gun5 {
+      height: 15px;
+      border-right: 1px solid $colorc0;
+      position: absolute;
+      top: 145px;
+      left: 0;
+    }
+    &_gun6 {
+      border-left: 1px solid $colorc0;
+      height: 15px;
+      position: absolute;
+      top: 145px;
+      right: 0px;
+    }
+  }
+  &_fx5 {
+    width: 1200px;
+    height: 462px;
+    padding: 48px 40px;
+    background-color: $colore5;
+    margin-bottom: 66px;
+    &_header {
+      background-color: $color64;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $colorff;
+    }
+    &_content {
+      display: flex;
+      position: relative;
+    }
+    &_center {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(25, 25, 26, 0.2);
+    }
+    &_center::before {
+      content: '';
+      position: absolute;
+      width: 315px;
+      height: 1px;
+      background-color: $colorc0;
+      top: 152px;
+      left: 180px;
+    }
+    &_center::after {
+      content: '';
+      position: absolute;
+      width: 315px;
+      height: 1px;
+      background-color: $colorc0;
+      top: 152px;
+      right: 180px;
+    }
+    &_left,
+    &_right {
+      width: 180px;
+      height: 306px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $colorf7;
+      position: relative;
+    }
+    &_left::before {
+      content: '';
+      position: absolute;
+      width: 52px;
+      height: 1px;
+      background-color: $colorc0;
+      top: 152px;
+      left: 2px;
+    }
+    &_left::after {
+      content: '';
+      position: absolute;
+      width: 52px;
+      height: 1px;
+      background-color: $colorc0;
+      top: 152px;
+      right: 2px;
+    }
+    &_right::before {
+      content: '';
+      position: absolute;
+      width: 52px;
+      height: 1px;
+      background-color: $colorc0;
+      top: 152px;
+      left: 2px;
+    }
+    &_right::after {
+      content: '';
+      position: absolute;
+      width: 52px;
+      height: 1px;
+      background-color: $colorc0;
+      top: 152px;
+      right: 2px;
+    }
+    &_gun7 {
+      height: 15px;
+      border-right: 1px solid $colorc0;
+      position: absolute;
+      top: 145px;
+      left: 0;
+    }
+    &_gun8 {
+      border-left: 1px solid $colorc0;
+      height: 15px;
+      position: absolute;
+      top: 145px;
+      left: 179px;
+    }
+    &_gun9 {
+      height: 15px;
+      border-right: 1px solid $colorc0;
+      position: absolute;
+      top: 145px;
+      right: 0;
+    }
+    &_gun10 {
+      border-left: 1px solid $colorc0;
+      height: 15px;
+      position: absolute;
+      top: 145px;
+      right: 179px;
+    }
+  }
+  .layoutbg {
+    width: 1200px;
+    height: 540px;
+  }
+  .page_content_fx6 {
+    width: 1200px;
+    height: 204px;
+    padding: 48px 40px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $colorff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    &_box {
+      border-bottom: 1px solid $colore5;
+      height: 60px;
+      width: 100%;
+    }
+    &_item {
+      width: 8.5%;
+      display: inline-block;
+      font-size: $font14;
+      color: $color19;
+    }
+    &_item:last-child {
+      width: 3%;
+      padding-right: 0;
+    }
+    &_box1 {
+      width: 100%;
+      margin-top: 30px;
+    }
+    &_item2 {
+      width: 8.5%;
+      display: inline-block;
+      font-size: $font14;
+      color: $color19;
+    }
+    &_item2:last-child {
+      width: 3%;
+      padding-right: 0;
+    }
+  }
+}

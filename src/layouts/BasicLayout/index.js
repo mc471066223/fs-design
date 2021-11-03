@@ -2,10 +2,10 @@ import React from 'react';
 import { Layout } from 'antd';
 import SiderMenu from '../SliderMenu';
 // import MainHeader from '../MainHeader';
+import MainFooter from '../MainFooter';
 
 import style from './index.module.scss';
 const BasicLayout = props => {
-  console.log(props);
   return (
     <Layout className={style.main_layout}>
       {/* 左侧菜单导航栏 */}
@@ -15,7 +15,9 @@ const BasicLayout = props => {
         {/* <MainHeader /> */}
         <Layout.Content className={style.main_layout_content}>
           {props.children && props.children}
+          <MainFooter />
         </Layout.Content>
+        {/* 底部栏 */}
       </Layout>
     </Layout>
   );

@@ -1,10 +1,11 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { observer } from 'mobx-react';
-import { Layout, Menu, Row, Icon } from 'antd';
+import { Layout, Menu, Row } from 'antd';
 import { appStores } from '@/stores';
 import config from '@/routers/config';
 import style from './index.module.scss';
+import logo from '@/assets/images/fs-logo-pc.png';
 
 const filterMenuRouter = routes => {
   // 遍历后台传来的路由字符串，转换为组件对象
@@ -23,9 +24,9 @@ const filterMenuRouter = routes => {
   return menuRouters || [];
 };
 
-const renderMenuItem = target =>
-  target.map(subMenu => {
-    if (subMenu.routes && !!subMenu.routes.find(child => child.path && child.name)) {
+const renderMenuItem = target => {
+  return target.map(subMenu => {
+    if (subMenu.routes && subMenu.routes.length > 0) {
       return (
         <Menu.SubMenu
           key={subMenu.path}
@@ -46,7 +47,7 @@ const renderMenuItem = target =>
       </Menu.Item>
     );
   });
-
+};
 const SilderMenu = routes => {
   const { pathname } = useLocation();
   const { globalStore } = appStores();
@@ -56,21 +57,23 @@ const SilderMenu = routes => {
 
   useEffect(() => {
     const menusItem = filterMenuRouter(config[1].routes);
+    console.log(menusItem);
     setMenus(menusItem);
   }, []);
 
   useEffect(() => {
-    const list = pathname.split('./').splice(1);
-    setopenKeys(list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`));
-  }, [pathname]);
+    // const list = pathname.split('/').splice(1);
+    setopenKeys(menus.map(item => item.path));
+    // setopenKeys(list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`));
+  }, [menus]);
 
   const getSelectedKeys = useMemo(() => {
     const list = pathname.split('/').splice(1);
     return list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
   }, [pathname]);
 
-  const onOpenChange = keys => {
-    setopenKeys(keys);
+  const onOpenChange = e => {
+    // setopenKeys(keys);
   };
 
   return (
@@ -81,8 +84,14 @@ const SilderMenu = routes => {
       className={style.main_left_slider}>
       <Link to="/">
         <Row type="flex" aligin="middle" className={style.main_logo}>
-          <Icon type="car" style={{ color: '#13e367' }} />
-          {!globalStore.collapsed && <span className={style.app_name}>{globalStore.appTitle}</span>}
+          <div className={style.main_logo_line}>
+            <img src={logo} alt="" />
+          </div>
+          <div className={style.main_left_title}>
+            <div>FS.COM英文站设计规范</div>
+          </div>
+          {/* <Icon type="car" style={{ color: '#13e367' }} />
+          {!globalStore.collapsed && <span className={style.app_name}>{globalStore.appTitle}</span>} */}
         </Row>
       </Link>
       <Menu
@@ -90,7 +99,13 @@ const SilderMenu = routes => {
         theme="dark"
         style={{ paddingLeft: 0, marginBottom: 0 }}
         className={style.main_menu}
-        // openKeys={openKeys}
+        triggerSubMenuAction={e => {
+          e.preventDefault();
+        }}
+        openKeys={openKeys}
+        expandIcon={() => {
+          return <div style={{ display: 'none' }}></div>;
+        }}
         onOpenChange={onOpenChange}
         selectedKeys={getSelectedKeys}>
         {renderMenuItem(menus)}

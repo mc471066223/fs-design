@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { ConfigProvider } from 'antd';
 import AppRouter from '@/routers/AppRouter';
 import reportWebVitals from './reportWebVitals';
-import '@/styles/index.module.scss';
+import './styles/index.css';
 
 const App = () => (
   <ConfigProvider>
@@ -12,9 +12,9 @@ const App = () => (
 );
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  // <React.StrictMode>
+    <App />,
+  // </React.StrictMode>,
   document.getElementById('root')
 );
 

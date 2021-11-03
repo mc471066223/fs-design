@@ -23,7 +23,6 @@ function RenderRoutes(props) {
         );
       } else {
         // 只存在一个路由
-        console.log(route);
         return (
           <Route
             key={route.path}
