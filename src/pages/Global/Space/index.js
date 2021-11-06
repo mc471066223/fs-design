@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import dataJson, { number } from './data';
-import BasicTitle from '../Component/BasicTitle';
+import BasicTitle from '@/components/BasicTitle';
 import Right4n from './component/Right4n';
 import RightSpace from './component/RightSpace';
 import LoginBtn from './component/LoginBtn';

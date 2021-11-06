@@ -1,9 +1,20 @@
 import React, { Suspense } from 'react';
-import { Route, Switch } from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 function RenderRoutes(props) {
   const { routes, extraProps = {}, switchProps = {} } = props;
   const mapFunc = routes => {
-    return routes.map(route => {
+    return routes.map((route, index) => {
+      if (route.redirect) {
+        return (
+          <Redirect
+            key={route.path || index}
+            exact={route.exact}
+            strict={route.strict}
+            from={route.path}
+            to={route.redirect}
+          />
+        );
+      } 
       if (route.routes && route.routes.length > 0) {
         // 存在二级菜单
         return (
@@ -16,7 +27,11 @@ function RenderRoutes(props) {
               return (
                 <Suspense fallback={null}>
                   <Switch>
-                    {React.createElement(route.component && route.component , {}, mapFunc(route.routes))}
+                    {React.createElement(
+                      route.component && route.component,
+                      {},
+                      mapFunc(route.routes)
+                    )}
                   </Switch>
                 </Suspense>
               );

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BasicTitle from '../../../Component/BasicTitle';
+import BasicTitle from '@/components/BasicTitle';
 import dataJson from '../../data';
 import red from '@/assets/images/Global/Color/red.png';
 import blue from '@/assets/images/Global/Color/blue.png';

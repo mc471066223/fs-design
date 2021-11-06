@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plist, box1, box2, box3, box4 } from './data';
-import BasicTitle from '../Component/BasicTitle';
+import BasicTitle from '@/components/BasicTitle';
 import style from './index.module.scss';
 import layoutbg from '@/assets/images/Global/Layout/layoutbg.png';
 function Layout() {

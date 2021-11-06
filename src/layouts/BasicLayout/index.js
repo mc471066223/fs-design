@@ -5,6 +5,7 @@ import SiderMenu from '../SliderMenu';
 import MainFooter from '../MainFooter';
 
 import style from './index.module.scss';
+
 const BasicLayout = props => {
   return (
     <Layout className={style.main_layout}>

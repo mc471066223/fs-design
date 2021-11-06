@@ -4,6 +4,7 @@ import { ConfigProvider } from 'antd';
 import AppRouter from '@/routers/AppRouter';
 import reportWebVitals from './reportWebVitals';
 import './styles/index.css';
+import "./icons/index.js"
 
 const App = () => (
   <ConfigProvider>

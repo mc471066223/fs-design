@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import BasicTitle from '../../../Component/BasicTitle';
+import BasicTitle from '@/components/BasicTitle';
 import dataJson from '../../data';
 import style from './index.module.scss';
 const Auxiliary = () => {

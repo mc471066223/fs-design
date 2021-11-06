@@ -1,4 +1,4 @@
-import componentHOC from '@/components/Component/componentHoc';
+import componentHOC from '../componentHoc';
 import style from './index.module.scss';
 import React from 'react';
 

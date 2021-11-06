@@ -12,10 +12,10 @@ const Boxlist = props => {
                 style={{ backgroundColor: bgList[index] }}
                 className={[
                   style.boxList_item_box,
-                  esColor && index === 3 && style.boxList_item_color,
-                  laColor && index === 3 && style.boxList_item_laColor,
-                  index === 4 && style.boxList_item_fourColor,
-                  index === 5 && style.boxList_item_fiveColor
+                  esColor && index === 3 ? style.boxList_item_color : '',
+                  laColor && index === 3 ? style.boxList_item_laColor : '',
+                  index === 4 ? style.boxList_item_fourColor : '',
+                  index === 5 ? style.boxList_item_fiveColor : ''
                 ].join(' ')}>
                 {bgList[index].replace('#', '')}
               </div>
@@ -27,7 +27,9 @@ const Boxlist = props => {
                   </div>
                 ) : (
                   <div
-                    className={textList.length > 5 && index === 0 && style.boxList_item_tePosition}>
+                    className={
+                      textList.length > 5 && index === 0 ? style.boxList_item_tePosition : ''
+                    }>
                     {item}
                   </div>
                 )}

@@ -1,0 +1,78 @@
+@import '../../../../../styles/common.module.scss';
+.application_box {
+  display: flex;
+  align-items: center;
+  > div:first-child {
+    width: 117px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #19191a;
+    border-radius: 19px;
+    border: 1px solid #89898c;
+    font-size: 14px;
+    font-family: OpenSans;
+  }
+  > div:nth-child(2) {
+    width: 117px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #19191a;
+    border-radius: 3px;
+    border: 1px solid #4b4b4d;
+    font-size: 14px;
+    font-family: OpenSans;
+    margin: 0 40px;
+  }
+  > div:last-child {
+    width: 66px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #4b4b4d;
+    font-size: 13px;
+    color: $color19;
+    font-family: OpenSans;
+  }
+}
+
+.applicable_box {
+  width: 600px;
+  &_left {
+    display: flex;
+    flex-direction: column;
+    &_content {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 8px;
+      > span:first-child {
+        height: $lh20;
+        line-height: $lh20;
+        font-size: 13px;
+        font-family: OpenSans;
+        color: $color19;
+      }
+    }
+    &_textArea {
+      width: 600px;
+      height: 110px;
+      TextArea {
+        height: 100%;
+      }
+      &_placeholderStyle {
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+        font-family: OpenSans;
+        color: #89898c;
+      }
+    }
+  }
+}
+
+.svgClass{
+  width: 12px;
+  height: 14px;
+}

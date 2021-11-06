@@ -3,12 +3,6 @@ import BasicLayout from '@/layouts/BasicLayout';
 import BlankLayout from '@/layouts/BlankLayout';
 
 const config = [
-  // {
-  //   // 想象一下当 URL 为 / 时，我们想渲染一个在 App 中的组件。不过在此时，App 的 render 中的 this.props.children 还是 undefined。这种情况我们可以使用 IndexRoute 来设置一个默认页面
-  //   path: '/',
-  //   component: lazy(() => import('@/layouts/BlankLayout/index')), //空白页布局
-  //   childRoutes: [
-  //子菜单路由
   {
     path: '/login', //路由路径
     title: '登录页', //菜单名称(不设置,则不展示在菜单栏中)
@@ -87,7 +81,7 @@ const config = [
           }
         ]
       },
-      { path: '/', exact: true, component: BlankLayout, redirect: '/global/layout' }
+      { path: '/', exact: true, redirect: '/global/layout' }
     ]
   }
 ];

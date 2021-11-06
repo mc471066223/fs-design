@@ -12,6 +12,7 @@ const {
   addWebpackAlias,
   fixBabelImports,
   addWebpackPlugin,
+  addWebpackModuleRule,
   addDecoratorsLegacy,
   setWebpackOptimizationSplitChunks
 } = require('customize-cra');
@@ -30,6 +31,17 @@ module.exports = override(
   fixBabelImports('antd', {
     libraryDirectory: 'es',
     style: 'css'
+  }),
+
+  addWebpackModuleRule({
+    test: /\.svg$/,
+    include: [path.resolve(__dirname, './src/icons')],
+    use: [
+      {
+        loader: 'svg-sprite-loader',
+        options: { symbolId: 'icon-[name]' }
+      }
+    ]
   }),
 
   /* 按需引入lodash */
@@ -94,5 +106,5 @@ module.exports = override(
       new BundleAnalyzerPlugin({
         analyzerMode: 'static' //输出静态报告文件report.html，而不是启动一个web服务
       })
-    )
+    ),
 );

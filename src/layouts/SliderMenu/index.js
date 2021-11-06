@@ -56,9 +56,7 @@ const SilderMenu = routes => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    console.log(config[1].routes);
     const menusItem = filterMenuRouter(config[1].routes);
-    console.log(menusItem);
     setMenus(menusItem);
   }, []);
 
@@ -69,8 +67,13 @@ const SilderMenu = routes => {
   }, [menus]);
 
   const getSelectedKeys = useMemo(() => {
-    const list = pathname.split('/').splice(1);
-    return list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
+    // console.log(pathname);
+    // const list = pathname.split('/').splice(1);
+    // console.log('list', list);
+    // let selectKey = list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
+    // console.log('selectKey', selectKey);
+    // return [pathname === '/' ? '/global/layout' : pathname];
+    return [pathname];
   }, [pathname]);
 
   const onOpenChange = e => {
@@ -83,7 +86,7 @@ const SilderMenu = routes => {
       collapsible
       collapsed={globalStore.collapsed}
       className={style.main_left_slider}>
-      <Link to="/">
+      <>
         <Row type="flex" aligin="middle" className={style.main_logo}>
           <div className={style.main_logo_line}>
             <img src={logo} alt="" />
@@ -94,7 +97,7 @@ const SilderMenu = routes => {
           {/* <Icon type="car" style={{ color: '#13e367' }} />
           {!globalStore.collapsed && <span className={style.app_name}>{globalStore.appTitle}</span>} */}
         </Row>
-      </Link>
+      </>
       <Menu
         mode="inline"
         theme="dark"
@@ -108,8 +111,7 @@ const SilderMenu = routes => {
           return <div style={{ display: 'none' }}></div>;
         }}
         onOpenChange={onOpenChange}
-        selectedKeys={getSelectedKeys}
-        >
+        selectedKeys={getSelectedKeys}>
         {renderMenuItem(menus)}
       </Menu>
     </Layout.Sider>

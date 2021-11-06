@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import dataJson from '../../data';
-import BasicTitle from '@/pages/Global/Component/BasicTitle';
+import BasicTitle from '@/components/BasicTitle';
 const Index = () => {
   const [data, setData] = useState(dataJson);
   return (
