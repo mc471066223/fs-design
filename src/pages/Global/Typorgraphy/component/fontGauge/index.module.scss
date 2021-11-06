@@ -1,0 +1,164 @@
+@import '../../../../../styles/common.module.scss';
+$div-font: 40px, 26px, 24px, 20px, 16px, 14px, 13px, 12px;
+.fontGaugeTop {
+  width: 1200px;
+  height: 242px;
+  display: flex;
+  margin-bottom: 80px;
+  &_left,
+  &_right {
+    background-color: $colorf7;
+  }
+  &_left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 242px;
+    margin-right: 20px;
+    color: $color19;
+    font-size: $font20;
+    font-family: OpenSans-Semibold, OpenSans;
+    span {
+      height: 30px;
+      line-height: 30px;
+      font-weight: bold;
+    }
+  }
+  &_right {
+    flex: 1;
+    padding: 0 20px;
+    &_box {
+      display: flex;
+      align-items: center;
+      height: 88px;
+      border-bottom: 1px solid $colore5;
+      color: $color19;
+      font-family: OpenSans;
+      > div {
+        margin-right: 40px;
+      }
+      &_text {
+        height: 24px;
+        font-size: 14px;
+        font-family: MicrosoftYaHei;
+        color: #19191a;
+        line-height: 24px;
+      }
+      &_40 {
+        height: 48px;
+        font-size: 40px;
+        line-height: 48px;
+      }
+      &_26 {
+        height: 34px;
+        line-height: 34px;
+        font-size: 26px;
+      }
+      &_24 {
+        height: 32px;
+        line-height: 32px;
+        font-size: 24px;
+      }
+      &_20 {
+        height: 30px;
+        line-height: 30px;
+        font-size: 20px;
+      }
+      &_16 {
+        height: 24px;
+        line-height: 24px;
+        font-size: 16px;
+      }
+      &_14 {
+        height: 22px;
+        line-height: 22px;
+        font-size: 14px;
+      }
+      &_13 {
+        height: 20px;
+        line-height: 20px;
+        font-size: 13px;
+      }
+      &_12 {
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+      }
+      // &_list {
+      //   display: flex;
+      //   > div {
+      //     display: inline-block;
+      //     > span {
+      //       @each $c in $div-font {
+      //         $i: index($div-font, $c);
+      //         &:nth-child(#{$i}) {
+      //           font-size: nth($div-font, $i);
+      //           font-family: OpenSans;
+      //           margin-right: 40px;
+      //           //+1是除了第一个以外的li
+      //         }
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+}
+
+.fontGaugeTop_center_box {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  color: #19191a;
+  border-bottom: 1px solid $colore5;
+  > div {
+    margin-right: 40px;
+  }
+  &_text {
+    height: 24px;
+    line-height: 24px;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+  }
+  &_Se {
+    height: 22px;
+    line-height: 22px;
+    color: #19191a;
+    font-size: 14px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: bold;
+  }
+  &_Re {
+    height: 22px;
+    line-height: 22px;
+    color: #19191a;
+    font-size: 14px;
+    font-family: OpenSans;
+  }
+}
+
+.fontGaugeTop_bottom_box {
+  display: flex;
+  align-items: center;
+  height: 88px;
+  &_text {
+    margin-right: 40px;
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 110px;
+    height: 48px;
+    margin-right: 40px;
+    font-size: 12px;
+    color: $colorff;
+  }
+  &_lastItem {
+    color: $color64;
+    background: #ffffff;
+    border: 1px solid #e5e5e5;
+  }
+}

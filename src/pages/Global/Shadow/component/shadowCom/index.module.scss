@@ -1,0 +1,230 @@
+@import '../../../../../styles/common.module.scss';
+.shadowCom_box {
+  display: flex;
+}
+.shadowCom_left {
+  width: 333px;
+  margin-bottom: $mg40;
+  margin-right: 162px;
+  &_top {
+    display: flex;
+    flex-direction: column;
+    &_text {
+      height: 26px;
+      line-height: 26px;
+      color: $color19;
+      font-size: $font16;
+      font-family: MicrosoftYaHei;
+      margin-bottom: $mg20;
+    }
+    &_box {
+      width: 360px;
+      height: 333px;
+      background: #ffffff;
+      box-shadow: 0px 12px 36px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &_bottom {
+    display: flex;
+    flex-direction: column;
+    &_text {
+      height: 26px;
+      line-height: 26px;
+      color: $color19;
+      font-size: $font16;
+      font-family: MicrosoftYaHei;
+      margin-top: $mg40;
+      margin-bottom: $mg20;
+    }
+    &_box {
+      width: 360px;
+      height: 411px;
+      background: #ffffff;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.shadowCom_right {
+  display: flex;
+  flex-direction: column;
+  &_top {
+    width: 228px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    &_box {
+      height: 333px;
+      background: #ffffff;
+      box-shadow: 0px 12px 36px 0px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e5e5e5;
+      display: flex;
+      flex-direction: column;
+    }
+    &_text {
+      height: 26px;
+      line-height: 26px;
+      color: #19191a;
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+      margin-bottom: $mg20;
+    }
+    &_content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &_type {
+      height: 24px;
+      line-height: 24px;
+      color: #19191a;
+      font-size: 16px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+    &_money {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &_money span:first-child {
+      display: inline-block;
+      height: 24px;
+      line-height: 24px;
+      color: #19191a;
+      font-size: 16px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    &_money span:last-child {
+      height: 20px;
+      font-size: 13px;
+      font-family: OpenSans;
+      color: #89898c;
+      line-height: 20px;
+    }
+    img {
+      width: 100%;
+      height: 188px;
+    }
+  }
+
+  &_bottom {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 42px;
+      right: 40px;
+      height: 0;
+      font-size: 0;
+      line-height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 18px solid $colorff;
+    }
+    &_box {
+      width: 268px;
+      height: 401px;
+      background: #ffffff;
+      box-shadow: 0px 12px 36px 0px rgba(0, 0, 0, 0.1);
+      border: 1px solid #e5e5e5;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    &_text {
+      height: 26px;
+      line-height: 26px;
+      color: #19191a;
+      font-size: 16px;
+      font-family: MicrosoftYaHei;
+      margin-bottom: $mg20;
+    }
+    &_name {
+      display: flex;
+      flex-direction: column;
+    }
+    &_name div:first-child {
+      height: 30px;
+      line-height: 30px;
+      color: #19191a;
+      font-size: 20px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    &_name div:last-child {
+      height: 20px;
+      line-height: 20px;
+      color: #646466;
+      font-size: 13px;
+      font-family: OpenSans;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $colore5;
+        top: 40px;
+        left: 0;
+      }
+    }
+    &_account {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #e5e5e5;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &_account div:first-child {
+      height: 20px;
+      line-height: 20px;
+      font-size: 13px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      color: #646466;
+      margin-bottom: 12px;
+    }
+    &_item {
+      height: 22px;
+      line-height: 22px;
+      color: #0060bf;
+      font-size: 14px;
+      font-family: OpenSans;
+      margin-bottom: 12px;
+    }
+    &_item:last-child {
+      margin-bottom: 20px;
+    }
+    &_recen,
+    &_out {
+      padding: 12px 0;
+      height: 46px;
+      line-height: 22px;
+      font-size: 14px;
+      font-family: OpenSans;
+      color: #0060bf;
+      border-bottom: 1px solid $colore5;
+    }
+    &_out {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Plist, box1, box2, box3, box4 } from './data';
-import BasicTitle from '../Component/index';
+import BasicTitle from '../Component/BasicTitle';
 import style from './index.module.scss';
 import layoutbg from '@/assets/images/Global/Layout/layoutbg.png';
 function Layout() {
@@ -114,7 +114,7 @@ function Layout() {
           title="网格单位"
           content=" 网格是构成页面栅格系统的最小单位，尽量保持单位是偶数，这样在页面放大或者放大或者缩小时还能保持清晰。
           FS.COM的网格的基数为4，符合偶数的思路同时能够匹配多数主流的显示设备。间距规则以4的倍数为原则，推荐使用间距：4、8、12、16、20、24、32。"
-          style={{ marginBottom: '80px' }}
+          styleClass={{ marginBottom: '80px' }}
         />
         <BasicTitle
           title="栅格"
@@ -130,7 +130,7 @@ function Layout() {
           content="为了帮助不同的设计者们在界面布局上的一致性和韵律感，统一设计到开发的布局语言，减少还原损耗，这里使用了
           UI 模度的概念。在大量的实践中，我们提取了一组可以用于 UI 布局空间决策的数组，他们都保持了
           4 倍数的原则、具备动态的韵律感。"
-          style={{ marginBottom: '40px' }}
+          styleClass={{ marginBottom: '40px' }}
         />
         <div className={style.page_content_fx6}>
           <div className={style.page_content_fx6_box}>

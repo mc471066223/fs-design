@@ -15,7 +15,9 @@ function RenderRoutes(props) {
             render={() => {
               return (
                 <Suspense fallback={null}>
-                  <Switch>{React.createElement(route.component, {}, mapFunc(route.routes))}</Switch>
+                  <Switch>
+                    {React.createElement(route.component && route.component , {}, mapFunc(route.routes))}
+                  </Switch>
                 </Suspense>
               );
             }}

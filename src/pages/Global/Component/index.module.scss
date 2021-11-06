@@ -1,0 +1,44 @@
+@import '../../../styles/common.module.scss';
+.page_title {
+  color: $color19;
+  height: $lh34;
+  line-height: $lh34;
+  font-size: $font26;
+  font-weight: bold;
+  margin-bottom: $mg20;
+  &_small {
+    height: $lh24;
+    line-height: $lh24;
+    color: $color64;
+    margin-bottom: $mg80;
+  }
+}
+
+.page_content {
+  color: $color64;
+  &_title {
+    color: $color19;
+    height: $lh30;
+    line-height: $lh30;
+    font-size: $font20;
+    font-weight: bold;
+    margin-bottom: $mg20;
+    font-family: MicrosoftYaHei;
+  }
+  &_subtitle {
+    color: $color19;
+    line-height: $lh26;
+    height: $lh26;
+    font-size: $font16;
+    margin-bottom: $mg20;
+    font-family: MicrosoftYaHei;
+  }
+  &_fx1title {
+    color: $color64;
+    min-height: $lh24;
+    line-height: $lh24;
+    font-size: $font14;
+    font-family: MicrosoftYaHei;
+    margin-bottom: $mg20;
+  }
+}

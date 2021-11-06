@@ -1,0 +1,43 @@
+@import '../../../../styles/common.module.scss';
+.IconList {
+  display: flex;
+  align-items: center;
+  &_item{
+    margin-right: 105px
+  }
+  &_item1{
+    margin-right:111px
+  }
+  &_img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  &_box {
+    display: flex;
+    align-items: center;
+    line-height: 24px;
+    &_icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+    }
+    &_text {
+      margin-left: 10px;
+    }
+  }
+  &_text {
+    margin-top: 10px;
+    font-size: $font14;
+    color: $color64;
+    position: relative;
+    min-height: 24px;
+    line-height: 24px;
+    &_position{
+      width: 150px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

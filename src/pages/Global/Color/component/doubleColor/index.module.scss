@@ -1,0 +1,34 @@
+@import '../../../../../styles/common.module.scss';
+.doubleColor {
+  margin-top: 40px;
+  &_box {
+    display: flex;
+  }
+  &_project {
+    width: 126px;
+    &_img {
+      width: 60px;
+      height: 60px;
+      img {
+        width: 53px;
+        height: 53px;
+      }
+    }
+    &_color1 {
+      color: $color19;
+      font-size: $font14;
+      margin-left: 26px;
+      height: 24px;
+      line-height: $lh24;
+      position: relative;
+      &::before {
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        background-color: red;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

@@ -26,7 +26,7 @@ const filterMenuRouter = routes => {
 
 const renderMenuItem = target => {
   return target.map(subMenu => {
-    if (subMenu.routes && subMenu.routes.length > 0) {
+    if ((subMenu.routes && subMenu.routes.length > 0) || subMenu.meta) {
       return (
         <Menu.SubMenu
           key={subMenu.path}
@@ -56,7 +56,8 @@ const SilderMenu = routes => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    const menusItem = filterMenuRouter(config.slice(0,3));
+    console.log(config[1].routes);
+    const menusItem = filterMenuRouter(config[1].routes);
     console.log(menusItem);
     setMenus(menusItem);
   }, []);

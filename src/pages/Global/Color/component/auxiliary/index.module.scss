@@ -1,0 +1,148 @@
+@import '../../../../../styles/common.module.scss';
+.auxiliary {
+  display: flex;
+  margin-bottom: 80px;
+}
+.auxiliary_box {
+  width: 300px;
+  height: 180px;
+  margin-bottom: 80px;
+  margin-right: 120px;
+  font-family: OpenSans;
+  &_top {
+    height: 120px;
+    background: #0060bf;
+    border-radius: 3px 3px 0px 0px;
+    color: $colorff;
+    padding: 14px;
+    &_color {
+      margin-bottom: 8px;
+    }
+  }
+  &_bottom {
+    height: 60px;
+    display: flex;
+    &_item {
+      flex: 1;
+      color: $colorff;
+      font-size: 12px;
+      text-align: center;
+      line-height: $lh60;
+      background: #0060bf;
+    }
+    &_item0 {
+      border-radius: 0px 0px 0px 3px;
+      opacity: 0.8;
+    }
+    &_item1 {
+      opacity: 0.7;
+    }
+    &_item2 {
+      opacity: 0.5;
+    }
+    &_item3 {
+      opacity: 0.3;
+    }
+    &_item4 {
+      background-color: rgba(0, 96, 191, 0.1);
+      color: $color64;
+      border-radius: 0px 0px 3px 0px;
+    }
+  }
+}
+
+.auxiliary_box1 {
+  width: 300px;
+  height: 180px;
+  margin-right: 120px;
+  margin-bottom: 80px;
+  font-family: OpenSans;
+  &_top {
+    height: 120px;
+    background: #f56300;
+    border-radius: 3px 3px 0px 0px;
+    color: $colorff;
+    padding: 14px;
+    &_color {
+      margin-bottom: 8px;
+    }
+  }
+  &_bottom {
+    height: 60px;
+    display: flex;
+    &_item {
+      flex: 1;
+      color: $colorff;
+      font-size: 12px;
+      text-align: center;
+      line-height: $lh60;
+      background: #f56300;
+    }
+    &_item0 {
+      border-radius: 0px 0px 0px 3px;
+      opacity: 0.8;
+    }
+    &_item1 {
+      opacity: 0.7;
+    }
+    &_item2 {
+      opacity: 0.5;
+    }
+    &_item3 {
+      opacity: 0.3;
+    }
+    &_item4 {
+      background-color: rgba(245, 99, 0, 0.1);
+      color: $color64;
+      border-radius: 0px 0px 3px 0px;
+    }
+  }
+}
+
+.auxiliary_box2 {
+  width: 300px;
+  height: 180px;
+  margin-right: 120px;
+  margin-bottom: 80px;
+  font-family: OpenSans;
+  &_top {
+    height: 120px;
+    background: #10a300;
+    border-radius: 3px 3px 0px 0px;
+    color: $colorff;
+    padding: 14px;
+    &_color {
+      margin-bottom: 8px;
+    }
+  }
+  &_bottom {
+    height: 60px;
+    display: flex;
+    &_item {
+      flex: 1;
+      color: $colorff;
+      font-size: 12px;
+      text-align: center;
+      line-height: $lh60;
+      background: #10a300;
+    }
+    &_item0 {
+      border-radius: 0px 0px 0px 3px;
+      opacity: 0.8;
+    }
+    &_item1 {
+      opacity: 0.7;
+    }
+    &_item2 {
+      opacity: 0.5;
+    }
+    &_item3 {
+      opacity: 0.3;
+    }
+    &_item4 {
+      color: $color64;
+      background-color: rgba(16, 163, 0, 0.1);
+      border-radius: 0px 0px 3px 0px;
+    }
+  }
+}

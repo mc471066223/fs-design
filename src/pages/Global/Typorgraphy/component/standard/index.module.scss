@@ -1,0 +1,35 @@
+@import '../../../../../styles/common.module.scss';
+.standard {
+  :global(.ant-table) {
+    width: 1200px;
+  }
+  :global(.ant-table-thead > tr > th) {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    color: #19191a;
+    height: 26px;
+    line-height: 26px;
+    background-color: $colorf7;
+  }
+  :global(.ant-table-thead > tr) {
+    border: 1px solid #e5e5e5;
+  }
+  :global(.ant-table-cell) {
+    color: $color64;
+  }
+  :global(.ant-table-thead
+      > tr
+      > th:not(:last-child):not(.ant-table-selection-column):not(.ant-table-row-expand-icon-cell):not([colspan])::before) {
+    width: 0px !important;
+  }
+  :global(.ant-table-thead > tr > th) {
+    padding: 15.5px 0 !important;
+  }
+  :global(.ant-table-tbody > tr > td) {
+    padding: 32.5px 0 !important;
+  }
+  :global(.ant-table-row  .ant-table-cell:first-child){
+    display: flex;
+    justify-content: center;
+  }
+}

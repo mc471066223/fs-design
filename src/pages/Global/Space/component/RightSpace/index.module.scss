@@ -1,0 +1,194 @@
+@import '../../../../../styles/common.module.scss';
+.eleSpace3_right {
+  width: 630px;
+  height: 296px;
+  background-color: $colorf2;
+  box-sizing: border-box;
+  padding-left: 110px;
+  padding-top: 80px;
+  &_left {
+    display: flex;
+    align-items: center;
+    &_icon{
+      margin-right: 20px;
+    }
+    &_icon1 {
+      width: 158px;
+      height: 38px;
+      background-color: $colorc0;
+      display: flex;
+      align-items: center;
+      color: $colorff;
+      border-radius: 3px;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-left: 30px;
+        margin-right: 8px;
+      }
+    }
+    &_icon2 {
+      display: flex;
+      align-items: center;
+      width: 172px;
+      height: 38px;
+      margin-left: 10px;
+      color: $colorff;
+      border-radius: 3px;
+      color: $color19;
+      border: 1px solid #89898c;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    padding-top: 60px;
+    &_icon{
+      margin-right: 20px;
+    }
+    &_icon4 {
+      width: 158px;
+      height: 38px;
+      background-color: $colorc0;
+      display: flex;
+      align-items: center;
+      color: $colorff;
+      border-radius: 3px;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-right: 30px;
+        margin-left: 20px;
+      }
+    }
+    &_icon5 {
+      img {
+        margin-left: 16px;
+        margin-right: 40px;
+      }
+    }
+    &_icon6 {
+      display: flex;
+      align-items: center;
+      width: 172px;
+      height: 38px;
+      margin-left: 30px;
+      color: $colorff;
+      // margin-bottom: $mg20;
+      border-radius: 3px;
+      color: $color19;
+      border: 1px solid #89898c;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-right: 30px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+
+
+.eleSpaceNew_right {
+  width: 630px;
+  height: 296px;
+  background-color: $colorf2;
+  box-sizing: border-box;
+  padding-left: 110px;
+  padding-top: 80px;
+  display: flex;
+  &_left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    &_icon{
+      margin-top: 30px;
+    }
+    &_icon1 {
+      width: 172px;
+      height: 38px;
+      background-color: $colorc0;
+      display: flex;
+      align-items: center;
+      color: $colorff;
+      border-radius: 3px;
+      margin-bottom: 16px;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-left: 30px;
+        margin-right: 8px;
+      }
+    }
+    &_icon2 {
+      display: flex;
+      align-items: center;
+      width: 172px;
+      height: 38px;
+      color: $colorff;
+      border-radius: 3px;
+      color: $color19;
+      border: 1px solid #89898c;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-left: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  &_right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 66px;
+    &_icon{
+      margin-top: 20px;
+    }
+    &_icon4 {
+      width: 172px;
+      height: 38px;
+      background-color: $colorc0;
+      display: flex;
+      align-items: center;
+      color: $colorff;
+      margin-bottom: 26px;
+      border-radius: 3px;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-right: 30px;
+        margin-left: 20px;
+      }
+    }
+    &_icon5 {
+      img {
+        margin-left: 16px;
+        margin-right: 40px;
+      }
+    }
+    &_icon6 {
+      display: flex;
+      align-items: center;
+      width: 172px;
+      height: 38px;
+      color: $colorff;
+      border-radius: 3px;
+      color: $color19;
+      border: 1px solid #89898c;
+      img {
+        width: 14px;
+        height: 16px;
+        margin-right: 30px;
+        margin-left: 20px;
+      }
+    }
+  }
+}
+

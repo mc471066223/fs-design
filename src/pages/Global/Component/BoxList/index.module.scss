@@ -1,0 +1,52 @@
+@import '../../../../styles/common.module.scss';
+.boxList {
+  display: flex;
+  &_item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 52px;
+    &_box {
+      width: 60px;
+      height: 60px;
+      color: $colorff;
+      text-align: center;
+      line-height: $lh60;
+      font-size: 12px;
+      font-family: OpenSans;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+    &_color {
+      color: $color64;
+      border: 1px solid #cccccc;
+    }
+    &_laColor {
+      border: 1px solid $colorcc;
+      background-color: $colorff !important;
+    }
+    &_fourColor {
+      color: $color64;
+    }
+    &_fiveColor {
+      color: $color64;
+      border: 1px solid #e5e5e5;
+    }
+    &_text {
+      width: 60px;
+      min-height: 24px;
+      line-height: 24px;
+      font-family: MicrosoftYaHei;
+      position: relative;
+      color: $color64;
+    }
+    &_position {
+      position: relative;
+      width: 90px !important;
+    }
+    &_tePosition {
+      bottom: 0;
+      position: absolute;
+      width: 70px !important;
+    }
+  }
+}

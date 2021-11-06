@@ -1,0 +1,112 @@
+@import '../../../../../styles/common.module.scss';
+.eleSpace5_left_content_user {
+  position: relative;
+  &_text {
+    color: $color64;
+    height: 20px;
+    line-height: $lh20;
+    font-size: 13px;
+    margin-bottom: 8px;
+    font-family: OpenSans;
+  }
+  &_input {
+    width: 420px;
+    height: 38px;
+    line-height: 38px;
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+    margin-bottom: 24px;
+  }
+}
+
+.eleSpace5_left_content_password {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.eleSpace5_left_content_title {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  font-size: 13px;
+  font-family: OpenSans;
+  color: #646466;
+  line-height: 20px;
+}
+
+.eleSpace5_left_content_input {
+  width: 420px;
+  height: 38px;
+  line-height: 38px;
+  border-radius: 2px;
+  border: 1px solid #cccccc;
+  margin-top: 8px;
+}
+
+.eleSpace5_left_content_btn {
+  width: 420px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #fff;
+  margin-top: 48px;
+  background-color: $colorc0;
+  font-size: $font14;
+}
+
+.eleSpace5_left_content_line {
+  display: flex;
+  color: $colorc0;
+  font-size: $font14;
+  position: absolute;
+  top: 66px;
+  right: -45px;
+  &_1 {
+    width: 15px;
+    height: 24px;
+    border-bottom: 1px solid $colorc0;
+    border-top: 1px solid $colorc0;
+    &::after {
+      content: '';
+      width: 1px;
+      height: 24px;
+      position: absolute;
+      left: 7px;
+      top: 0;
+      border-left: 1px solid #c00000;
+    }
+  }
+  &:last-child {
+    height: $lh24;
+    line-height: $lh24;
+  }
+}
+
+.eleSpace5_left_content_line2 {
+  display: flex;
+  color: $colorc0;
+  font-size: $font14;
+  position: absolute;
+  top: 66px;
+  right: -45px;
+  &_1 {
+    width: 15px;
+    height: 48px;
+    border-bottom: 1px solid $colorc0;
+    border-top: 1px solid $colorc0;
+    &::after {
+      content: '';
+      width: 1px;
+      height: 48px;
+      position: absolute;
+      left: 7px;
+      top: 0;
+      border-left: 1px solid #c00000;
+    }
+  }
+  &:last-child {
+    height: $lh24;
+    line-height: 48px;
+  }
+}
