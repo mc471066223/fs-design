@@ -1,0 +1,93 @@
+@import '../../../../../styles/common.module.scss';
+.icon_regular_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 154px;
+  height: 154px;
+  border: 1px solid #89898c;
+  margin-bottom: 40px;
+}
+.icon_delete {
+  display: flex;
+  margin-bottom: 80px;
+  &_left {
+    width: 111px;
+    height: 120px;
+    position: relative;
+    &_box {
+      position: absolute;
+      height: 24px;
+      font-size: 14px;
+      font-family: MicrosoftYaHei;
+      color: $color64;
+      line-height: 24px;
+      right: -70px;
+      bottom: 0;
+    }
+    div:first-child {
+      margin-top: 3px;
+    }
+    &_round {
+      width: 65px;
+      height: 9px;
+      position: absolute;
+      right: 40px;
+      bottom: 5px;
+      border-top: 1px dashed $color64;
+      border-bottom: 1px dashed $color64;
+    }
+    &_circle {
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: #c00000;
+      bottom: 5px;
+      right: 95px;
+    }
+  }
+  &_right {
+    width: 111px;
+    height: 120px;
+    margin-left: 125px;
+    position: relative;
+    &::after {
+      position: absolute;
+      top: 15px;
+      right: -24px;
+      content: '';
+      width: 52px;
+      height: 1px;
+      border: 1px dashed #646466;
+    }
+    &_box {
+      position: absolute;
+      right: -54px;
+      top: 10px;
+    }
+    &_line {
+      position: absolute;
+      top: -6px;
+      right: -8px;
+      height: $lh24;
+      line-height: $lh24;
+      font-size: $font14;
+      font-family: MicrosoftYaHei;
+      color: #646466;
+    }
+    &_circle {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: #c00000;
+      top: -5px;
+      right: 85px;
+    }
+  }
+  svg {
+    width: 100%;
+    height: 100%;
+  }
+}

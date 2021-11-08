@@ -5,6 +5,7 @@ import AppRouter from '@/routers/AppRouter';
 import reportWebVitals from './reportWebVitals';
 import './styles/index.css';
 import "./icons/index.js"
+import "@/assets/fonts/iconfont.css"
 
 const App = () => (
   <ConfigProvider>
@@ -15,7 +16,7 @@ const App = () => (
 ReactDOM.render(
   // <React.StrictMode>
     <App />,
-  // </React.StrictMode>,
+  //  </React.StrictMode>,
   document.getElementById('root')
 );
 

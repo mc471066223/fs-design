@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="94px" height="32px" viewBox="0 0 94 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮/图标按钮/视频按钮hover</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.294118 0 0 0 0 0.294118 0 0 0 0 0.301961 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="1.-全局样式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.7-按钮Button" transform="translate(-560.000000, -2390.000000)">
+            <g id="1.7.5-图标按钮" transform="translate(540.000000, 2163.000000)">
+                <g id="带图标的按钮" transform="translate(0.000000, 117.000000)">
+                    <g id="白色" transform="translate(0.000000, 106.000000)">
+                        <g id="按钮/图标按钮/视频按钮hover" transform="translate(20.000000, 4.000000)">
+                            <path d="M16,0 L78,0 C86.836556,-1.623249e-15 94,7.163444 94,16 C94,24.836556 86.836556,32 78,32 L16,32 C7.163444,32 1.082166e-15,24.836556 0,16 C-1.082166e-15,7.163444 7.163444,1.623249e-15 16,0 Z" id="矩形" fill="#FFFFFF"></path>
+                            <g id="编组" transform="translate(20.000000, 5.000000)">
+                                <text id="01:11" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="22" fill="#19191A">
+                                    <tspan x="18" y="15">01:11</tspan>
+                                </text>
+                                <g filter="url(#filter-1)" id="播放icon-14px">
+                                    <g transform="translate(0.000000, 4.000000)" fill-rule="nonzero">
+                                        <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="14" height="14"></rect>
+                                        <path d="M11.8944789,8.43819093 L4.03596922,13.705908 C3.24300896,14.2391054 2.16704391,14.0271936 1.63521367,13.2328662 C1.44107513,12.947127 1.33990433,12.6108025 1.33990433,12.2690093 L1.33990433,1.73084085 C1.33990433,0.775187014 2.11645852,0 3.07211235,0 C3.41390556,0 3.75023009,0.101170795 4.03596922,0.293942168 L11.8931117,5.56165922 C12.6874391,6.09485665 12.8993509,7.17082168 12.3661535,7.96514912 C12.2417408,8.15108462 12.0804144,8.31104385 11.8944789,8.43819093 Z" id="路径" fill="#FFFFFF"></path>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

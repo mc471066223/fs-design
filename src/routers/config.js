@@ -4,6 +4,11 @@ import BlankLayout from '@/layouts/BlankLayout';
 
 const config = [
   {
+    path: '/',
+    exact: true,
+    redirect: '/global/layout'
+  },
+  {
     path: '/login', //路由路径
     title: '登录页', //菜单名称(不设置,则不展示在菜单栏中)
     meta: {
@@ -55,12 +60,12 @@ const config = [
           {
             path: '/global/Button',
             title: '按钮 Button',
-            component: lazy(() => import('@/pages/Home'))
+            component: lazy(() => import('@/pages/Global/Button'))
           },
           {
             path: '/global/Icon',
             title: '图标 Icon',
-            component: lazy(() => import('@/pages/Home'))
+            component: lazy(() => import('@/pages/Global/Icon'))
           }
         ]
       },
@@ -72,7 +77,7 @@ const config = [
           {
             path: '/navigation/website',
             title: '页面导航 Website Navigation',
-            component: lazy(() => import('@/pages/Home'))
+            component: lazy(() => import('@/pages/Navigation/WebsiteNavigation'))
           },
           {
             path: '/navigation/content',
@@ -80,8 +85,7 @@ const config = [
             component: lazy(() => import('@/pages/Home'))
           }
         ]
-      },
-      { path: '/', exact: true, redirect: '/global/layout' }
+      }
     ]
   }
 ];

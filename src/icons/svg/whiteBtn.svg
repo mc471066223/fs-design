@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="38px" viewBox="0 0 117 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮/次按钮/按钮/次按钮/浅灰白底次按钮hover</title>
+    <g id="1.-全局样式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.7-按钮Button" transform="translate(-835.000000, -1350.000000)">
+            <g id="1.7.2-次要按钮" transform="translate(540.000000, 1059.000000)">
+                <g id="次按钮" transform="translate(0.000000, 118.000000)">
+                    <g id="浅灰白底次按钮" transform="translate(0.000000, 173.000000)">
+                        <g id="按钮/次按钮/按钮/次按钮/浅灰白底次按钮hover" transform="translate(295.000000, 0.000000)">
+                            <path d="M114,0.5 C114.690356,0.5 115.315356,0.779822031 115.767767,1.23223305 C116.220178,1.68464406 116.5,2.30964406 116.5,3 L116.5,3 L116.5,35 C116.5,35.6903559 116.220178,36.3153559 115.767767,36.767767 C115.315356,37.220178 114.690356,37.5 114,37.5 L114,37.5 L3,37.5 C2.30964406,37.5 1.68464406,37.220178 1.23223305,36.767767 C0.779822031,36.3153559 0.5,35.6903559 0.5,35 L0.5,35 L0.5,3 C0.5,2.30964406 0.779822031,1.68464406 1.23223305,1.23223305 C1.68464406,0.779822031 2.30964406,0.5 3,0.5 L3,0.5 Z" id="矩形" stroke="#4B4B4D" fill="#FFFFFF"></path>
+                            <text id="Pay-Now" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="22" fill="#19191A">
+                                <tspan x="30" y="23">Pay Now</tspan>
+                            </text>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

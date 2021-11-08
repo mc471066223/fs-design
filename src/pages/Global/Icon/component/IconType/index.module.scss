@@ -1,0 +1,26 @@
+@import '../../../../../styles/common.module.scss';
+.IconType {
+  &_box,
+  &_chat {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    i {
+      font-size: 36px;
+      margin-right: 40px;
+    }
+  }
+  &_surface {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    svg {
+      width: 72px;
+      height: 72px;
+      margin-right: 40px;
+    }
+  }
+  &_chat {
+    color: $color64;
+  }
+}

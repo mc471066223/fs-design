@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useHistory, useLocation } from 'react-router-dom';
 import { Layout } from 'antd';
 import SiderMenu from '../SliderMenu';
 // import MainHeader from '../MainHeader';
@@ -7,6 +8,13 @@ import MainFooter from '../MainFooter';
 import style from './index.module.scss';
 
 const BasicLayout = props => {
+  // const { pathname } = useLocation();
+  // const history = useHistory();
+  // useEffect(() => {
+  //   if (pathname === '/') {
+  //     history.replace('/global/layout');
+  //   }
+  // }, []);
   return (
     <Layout className={style.main_layout}>
       {/* 左侧菜单导航栏 */}

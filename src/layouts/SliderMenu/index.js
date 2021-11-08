@@ -56,7 +56,7 @@ const SilderMenu = routes => {
   const [menus, setMenus] = useState([]);
 
   useEffect(() => {
-    const menusItem = filterMenuRouter(config[1].routes);
+    const menusItem = filterMenuRouter(config[2].routes || []);
     setMenus(menusItem);
   }, []);
 
@@ -67,11 +67,8 @@ const SilderMenu = routes => {
   }, [menus]);
 
   const getSelectedKeys = useMemo(() => {
-    // console.log(pathname);
     // const list = pathname.split('/').splice(1);
-    // console.log('list', list);
     // let selectKey = list.map((item, index) => `/${list.slice(0, index + 1).join('/')}`);
-    // console.log('selectKey', selectKey);
     // return [pathname === '/' ? '/global/layout' : pathname];
     return [pathname];
   }, [pathname]);

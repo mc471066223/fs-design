@@ -1,0 +1,49 @@
+@import '../../../../../styles/common.module.scss';
+.textBtn {
+  display: flex;
+  margin-bottom: 20px;
+}
+.newTextBtn {
+  display: flex;
+  margin-bottom: 42px;
+}
+
+.textBtn_0,
+.textBtn_1,
+.textBtn_2,
+.textBtn_3,
+.newTextBtn_0,
+.newTextBtn_1,
+.newTextBtn_2,
+.newTextBtn_3 {
+  height: $lh24;
+  line-height: $lh24;
+  font-size: $font14;
+  font-family: MicrosoftYaHei;
+  margin-right: 80px;
+}
+.textBtn_0,
+.textBtn_2,
+.textBtn_3,
+.newTextBtn_0,
+.newTextBtn_1 {
+  color: $color19;
+}
+.textBtn_1 {
+  color: $color64;
+}
+.textBtn_3 {
+  text-decoration: underline;
+}
+.textBtn_0,
+.newTextBtn_0 {
+  width: 50px;
+}
+.textBtn_2,.newTextBtn_2 {
+  width: 85px;
+  color: #0060bf;
+}
+.newTextBtn_3 {
+  color: #0060bf;
+  text-decoration: underline;
+}

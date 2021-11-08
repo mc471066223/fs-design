@@ -1,0 +1,84 @@
+@import '../../../../../styles/common.module.scss';
+.labelList_title {
+  height: 26px;
+  line-height: 26px;
+  font-size: $font16;
+  color: $color19;
+  font-family: MicrosoftYaHei;
+  margin: 40px 0 20px 0;
+}
+
+.labelList_box {
+  display: flex;
+  align-items: center;
+  &_arista,
+  &_more {
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: $color19;
+    font-size: 13px;
+    font-family: OpenSans;
+    background: $colorff;
+    border-radius: 2px;
+    border: 1px solid $colorcc;
+    margin-right: 10px;
+  }
+  &_cisco {
+    width: 60px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    color: $color19;
+    font-size: 13px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    background: $colorf7;
+    border-radius: 2px;
+    border: 2px solid #646466;
+    margin-right: 10px;
+  }
+  &_more {
+    width: 68px;
+    color: #0060bf;
+    margin-right: 40px;
+  }
+
+  &_all {
+    width: 48px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    font-size: $font14;
+    font-family: OpenSans;
+    background: #2d324a;
+    border-radius: 13px;
+    margin-right: 8px;
+  }
+  &_fn {
+    width: 109px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #2d324a;
+    font-size: 14px;
+    font-family: OpenSans;
+    background: #ebebf0;
+    border-radius: 13px;
+    margin-right: 8px;
+  }
+
+  &_More {
+    width: 79px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #0060bf;
+    font-size: 14px;
+    font-family: OpenSans;
+    background: #ebebf0;
+    border-radius: 13px;
+  }
+}

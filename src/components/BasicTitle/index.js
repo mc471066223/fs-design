@@ -29,11 +29,27 @@ function BasicTitle(props) {
         </div>
       )}
       {slots['default']}
-      {content && (
-        <div className={style.page_content_fx1title} style={styleClass}>
-          {content}
-        </div>
-      )}
+      {content && content ? (
+        Array.isArray(content) ? (
+          content.map((item, index) => {
+            return (
+              <div
+                className={[
+                  style.page_content_fx1title,
+                  index === 0 ? style.page_content_margin : ''
+                ].join(' ')}
+                style={styleClass}
+                key={index}>
+                {item}
+              </div>
+            );
+          })
+        ) : (
+          <div className={style.page_content_fx1title} style={styleClass}>
+            {content}
+          </div>
+        )
+      ) : null}
     </>
   );
 }

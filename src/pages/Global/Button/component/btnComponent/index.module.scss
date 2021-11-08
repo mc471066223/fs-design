@@ -1,0 +1,64 @@
+@import '../../../../../styles/common.module.scss';
+.btnBox {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  &_title {
+    height: 26px;
+    line-height: 26px;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    color: #19191a;
+    margin-right: 20px;
+  }
+  &_item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+    position: relative;
+    &_box {
+      width: 117px;
+      height: 38px;
+      line-height: 38px;
+      text-align: center;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+    &_title {
+      height: 24px;
+      line-height: 24px;
+      font-size: $font14;
+      color: $color64;
+      font-family: MicrosoftYaHei;
+    }
+    &_btn {
+      width: 117px;
+      height: 38px;
+      border-radius: 3px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.ele_item {
+  display: flex;
+  align-items: center;
+  &_box {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    margin-right: 10px;
+  }
+}
+
+.ele_item_relative{
+  position: relative;
+  top: 10px;
+}
+.ele_relative{
+  position: absolute;
+  top: 48px;
+}
+
+
+
+

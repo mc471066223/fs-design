@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="117px" height="38px" viewBox="0 0 117 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>按钮/主按钮/红色实心</title>
+    <g id="1.-全局样式" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.7-按钮Button" transform="translate(-672.000000, -352.000000)">
+            <g id="1.7.1主要按钮" transform="translate(540.000000, 258.000000)">
+                <g id="红色实心主按钮" transform="translate(0.000000, 94.000000)">
+                    <g id="按钮/主按钮/红色实心" transform="translate(132.000000, 0.000000)">
+                        <path d="M3,0 L114,0 C115.656854,-3.04359188e-16 117,1.34314575 117,3 L117,35 C117,36.6568542 115.656854,38 114,38 L3,38 C1.34314575,38 2.86744138e-15,36.6568542 0,35 L0,3 C-2.02906125e-16,1.34314575 1.34314575,1.19253761e-15 3,0 Z" id="矩形" fill="#C00000"></path>
+                        <text id="Pay-Now" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="22" fill="#FFFFFF">
+                            <tspan x="30" y="23">Pay Now</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

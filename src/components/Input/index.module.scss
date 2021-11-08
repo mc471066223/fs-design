@@ -1,0 +1,42 @@
+@import '../../styles/common.module.scss';
+.title_text {
+  height: $lh20;
+  line-height: $lh20;
+  color: $color19;
+  font-size: 13px;
+  font-family: OpenSans;
+  margin-bottom: 8px;
+  &_extra {
+  }
+}
+
+.input {
+  width: 400px;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  color: $color19;
+  &_limtText {
+    height: $lh20;
+    line-height: $lh20;
+    color: #c00000;
+    font-size: 13px;
+    font-family: OpenSans;
+  }
+  &_width {
+    width: 290px;
+  }
+}
+
+:global(.ant-input) {
+  padding: 8px 0 10px 12px;
+}
+
+.placerHolderStyle {
+  height: $lh20;
+  line-height: $lh20;
+  color: $color19;
+  font-size: 13px;
+  font-family: OpenSans;
+}

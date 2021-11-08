@@ -16,9 +16,8 @@ const dataJson = [
   'Address',
   'Apt, Suite, floor, etc.',
   'Upload File',
+  '卡片',
   '标签'
 ];
-
-
 
 export { dataJson };

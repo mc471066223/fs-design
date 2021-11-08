@@ -72,7 +72,75 @@
   }
 }
 
-.svgClass{
+.svgClass {
   width: 12px;
   height: 14px;
+}
+
+.placerHolderStyle {
+  height: $lh20;
+  line-height: $lh20;
+  color: $color19;
+  font-size: 13px;
+  font-family: OpenSans;
+}
+
+.card_box {
+  height: 333px;
+  width: 228px;
+  background: #ffffff;
+  box-shadow: 0px 12px 36px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  img {
+    width: 100%;
+    height: 188px;
+  }
+  &_text {
+    height: 26px;
+    line-height: 26px;
+    color: #19191a;
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    margin-bottom: $mg20;
+  }
+  &_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &_type {
+    height: 24px;
+    line-height: 24px;
+    color: #19191a;
+    font-size: 16px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    margin-top: 16px;
+    margin-bottom: 32px;
+  }
+  &_money {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_money span:first-child {
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    color: #19191a;
+    font-size: 16px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  &_money span:last-child {
+    height: 20px;
+    font-size: 13px;
+    font-family: OpenSans;
+    color: #89898c;
+    line-height: 20px;
+  }
 }

@@ -1,0 +1,26 @@
+@import '../../../../../styles/common.module.scss';
+.titleList {
+  display: flex;
+  margin-left: 132px;
+  &_item {
+    width: 117px;
+    height: $lh24;
+    color: $color64;
+    font-size: $font14;
+    font-family: MicrosoftYaHei;
+    margin-right: 40px;
+  }
+}
+
+.secondary {
+  width: 117px;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: $color19;
+  font-size: $font14;
+  font-family: OpenSans;
+  border-radius: 19px;
+  border: 1px solid #89898c;
+  margin-bottom: 80px;
+}

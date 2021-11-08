@@ -1,13 +1,14 @@
 import React, { useMemo } from 'react';
-import style from './index.css';
+import './index.scss';
 const SvgIcon = props => {
-  const { Svg, iconName } = props;
+  const { svgClassName, iconName } = props;
   const IconName = useMemo(() => {
     return `#icon-${iconName}`;
   }, [iconName]);
+  // console.log(svgClassName)
   return (
     <>
-      <svg className={[style.svg_icon,Svg].join('')} aria-hidden={true}>
+      <svg className={svgClassName} aria-hidden={true}>
         <use xlinkHref={IconName} />
       </svg>
     </>

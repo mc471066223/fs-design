@@ -1,6 +1,7 @@
 import React from 'react';
 import BorderSize from './component/borderSize';
 import Applicable from './component/applicable';
+import LabelList from './component/labelList';
 
 function Border() {
   return (
@@ -9,6 +10,8 @@ function Border() {
       <BorderSize />
       {/* 适用场景 */}
       <Applicable />
+      {/* 标签 */}
+      <LabelList />
     </div>
   );
 }

@@ -1,0 +1,42 @@
+.titleList {
+  display: flex;
+  margin-left: 132px;
+  &_item {
+    width: 117px;
+    height: 24px;
+    font-size: 14px;
+    font-family: MicrosoftYaHei;
+    color: #646466;
+    margin-right: 40px;
+  }
+}
+
+.btnComponent_box {
+  width: 708px;
+  height: 238px;
+  background: #f2f2f2;
+  border-radius: 1px;
+  padding: 80px;
+  display: flex;
+  &_left {
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    &_content {
+      width: 246px;
+      display: flex;
+      justify-content: space-between;
+    }
+    div:last-child {
+      width: 246px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  }
+  &_left:last-child {
+    margin-left: 56px;
+  }
+}

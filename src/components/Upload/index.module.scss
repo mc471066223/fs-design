@@ -1,0 +1,111 @@
+@import '../../styles/common.module.scss';
+.upload {
+  width: 600px;
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  &_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    > span:first-child {
+      height: $lh20;
+      line-height: $lh20;
+      font-size: 13px;
+      font-family: OpenSans;
+      color: $color19;
+    }
+    > span:last-child {
+      color: #89898C;
+    }
+  }
+  &_box {
+    width: 600px;
+    height: 110px;
+    TextArea {
+      height: 100%;
+    }
+    &_item {
+      display: flex;
+      align-items: center;
+      margin-top: 8px;
+      &_repeat {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+      &_uploadText {
+        height: 22px;
+        line-height: 22px;
+        margin-left: 9px;
+        color: #0060bf;
+        font-size: 14px;
+        font-family: OpenSans;
+      }
+    }
+    &_placeholderStyle {
+      height: 20px;
+      line-height: 20px;
+      font-size: 13px;
+      font-family: OpenSans;
+      color: #89898c;
+    }
+  }
+}
+
+.totipClass {
+  width: 16px;
+  height: 16px;
+  line-height: 13px;
+  text-align: center;
+  font-size: 14px;
+  font-family: OpenSans;
+  color: #89898c;
+  border-radius: 50%;
+  border: 2px solid #89898c;
+  margin-left: 8px;
+  &_i1 {
+    margin-left: 8px;
+  }
+  &_i2 {
+    margin-left: 12px;
+  }
+}
+
+:global(.ant-tooltip-inner) {
+  width: 335px;
+  height: 80px;
+  padding: 20px;
+  line-height: 20px;
+  font-size: 13px;
+  font-family: OpenSans;
+  color: #646466;
+  box-shadow: 0px 1px 8px 0px rgba(120, 102, 102, 0.3);
+}
+
+:global(.ant-tooltip-arrow-content) {
+  width: 8px;
+  height: 10px;
+  left: -2px;
+  background: #ffffff;
+  box-shadow: 0px 1px 8px 0px rgba(120, 102, 102, 0.3);
+}
+
+:global(.ant-upload-list-text){
+  display: none !important;
+}
+
+.ant-upload {
+  width: 120px;
+  height: 120px;
+}
+
+.limitSize {
+  height: $lh20;
+  line-height: $lh20;
+  color: #c00000;
+  margin-top: 12px;
+  font-size: 13px;
+  font-family: OpenSans;
+}
