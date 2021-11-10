@@ -1,0 +1,66 @@
+@import '../../../../../styles/common.module.scss';
+.label_tabsList {
+  display: flex;
+  align-items: center;
+  width: 819px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid $colore5;
+  margin-bottom: 20px;
+  &_item {
+    line-height: 22px;
+    font-size: $font14;
+    font-family: OpenSans;
+    margin-right: 40px;
+    color: $color64;
+  }
+  &_item:last-child {
+    margin-right: 0;
+  }
+  &_active {
+    position: relative;
+    color: $color19;
+  }
+  &_active::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -16px;
+    left: 28px;
+    background-color: $colorc0;
+    border-radius: 2px;
+  }
+}
+.label_newTabsList {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $colore5;
+  &_box {
+    display: flex;
+    align-items: center;
+    margin-right: 41px;
+    padding-bottom: 21px;
+    color: $color19;
+    font-size: $font16;
+    font-family: OpenSans;
+    svg {
+      width: 28px;
+      height: 28px;
+      margin-right: 8px;
+    }
+  }
+  &_active {
+    position: relative;
+    color: $color19;
+  }
+  &_active::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 3px;
+    bottom: -28px;
+    left: -2px;
+    background-color: $colorc0;
+    border-radius: 2px;
+  }
+}

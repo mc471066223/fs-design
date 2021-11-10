@@ -1,0 +1,86 @@
+@import '../../../../../../styles/common.module.scss';
+.radio {
+  display: flex;
+  align-items: center;
+  &_box {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    &_input {
+      width: 14px;
+      height: 14px;
+      border: 1px solid $color19;
+      border-radius: 50%;
+      margin-right: 8px;
+      position: relative;
+      &_circle {
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: $color19;
+      }
+    }
+    &_text {
+      line-height: 20px;
+      color: $color19;
+      font-size: 13px;
+      font-family: OpenSans;
+    }
+    &_disabled_border {
+      border: 1px solid #89898c;
+    }
+    &_disabled_circle {
+      background-color: #89898c;
+    }
+    &_disabled_text {
+      color: #89898c;
+    }
+  }
+}
+
+.checkBox {
+  display: flex;
+  align-items: center;
+  &_box {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+    &_input {
+      width: 14px;
+      height: 14px;
+      border: 1px solid $color19;
+      margin-right: 8px;
+      border-radius: 3px;
+      position: relative;
+      i {
+        position: absolute;
+        left: -1.6px;
+        top: -2px;
+        font-size: 16px;
+        transform: scale(0.6);
+      }
+    }
+    &_text {
+      line-height: 20px;
+      color: $color19;
+      font-size: 13px;
+      font-family: OpenSans;
+    }
+    &_disabled_border {
+      border: 1px solid #89898c;
+    }
+    &_disabled_circle {
+      background-color: #89898c;
+    }
+    &_disabled_text {
+      color: #89898c;
+    }
+  }
+}

@@ -36,7 +36,7 @@ function BasicTitle(props) {
               <div
                 className={[
                   style.page_content_fx1title,
-                  index === 0 ? style.page_content_margin : ''
+                  index !== content.length - 1 ? style.page_content_margin : ''
                 ].join(' ')}
                 style={styleClass}
                 key={index}>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1152px" height="36px" viewBox="0 0 1152 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>导航/步骤条/账户中心步骤条</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 0.400000 0 0 0 0 0.627451 0 0 0 0 0.850980 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="2.-导航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2-内容导航-Content-Navigation" transform="translate(-540.000000, -1584.000000)">
+            <g id="2.2.3-步骤条" transform="translate(540.000000, 1228.000000)">
+                <g id="横向步骤条" transform="translate(0.000000, 94.000000)">
+                    <g id="编组-2" transform="translate(0.000000, 150.000000)">
+                        <g id="导航/步骤条/账户中心步骤条" transform="translate(0.000000, 112.000000)">
+                            <g id="Submitted">
+                                <polygon id="矩形" fill="#A5D1E9" points="0 0 372.1 0 392 18.0785048 372.1 36 0 36"></polygon>
+                                <g id="编组-2" transform="translate(152.000000, 8.000000)">
+                                    <text id="Submitted" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="22" fill="#FFFFFF">
+                                        <tspan x="26" y="15">Submitted</tspan>
+                                    </text>
+                                    <g id="编组" transform="translate(0.000000, 1.000000)">
+                                        <circle id="椭圆形" fill="#FFFFFF" cx="10" cy="10" r="10"></circle>
+                                        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="4" y="4" width="12" height="12"></rect>
+                                        <polygon id="路径" fill="#66A0D9" fill-rule="nonzero" points="15.1495486 7.32445802 8.86643256 13.6989521 4.85045139 9.62454655 5.85661722 8.59687932 8.87385554 11.6580199 14.1540556 6.30103591"></polygon>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Processing" transform="translate(377.000000, 0.000000)">
+                                <polygon id="矩形备份-6" fill="#A5D1E9" points="-1.64996185e-12 -2.7000624e-13 385.104897 0 405 18.0785048 385.104897 36 -1.64996185e-12 36 20.1947096 18.2013117"></polygon>
+                                <g id="编组-2" transform="translate(154.000000, 8.000000)">
+                                    <text id="Processing" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="22" fill="#FFFFFF">
+                                        <tspan x="26" y="15">Processing</tspan>
+                                    </text>
+                                    <g id="icon" transform="translate(0.000000, 1.000000)">
+                                        <circle id="椭圆形" fill="#FFFFFF" cx="10" cy="10" r="10"></circle>
+                                        <g filter="url(#filter-1)" id="常用icon/向右——16px">
+                                            <g transform="translate(4.000000, 4.000000)" id="向右" fill-rule="nonzero">
+                                                <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="12" height="12"></rect>
+                                                <path d="M2.97096204,11.8426892 C2.76121434,11.6329415 2.76121434,11.2942986 2.97096204,11.0833791 L8.05412129,6.00021988 L2.97096204,0.917060637 C2.76121434,0.707312941 2.76121434,0.368670012 2.97096204,0.157750535 C3.18070973,-0.0531689414 3.51935266,-0.0519971602 3.73027214,0.157750535 L8.91420402,5.34168243 C9.09465735,5.52213575 9.18605578,5.76117782 9.18605578,6.00021988 C9.18605578,6.23926194 9.09465735,6.47713223 8.91420402,6.65875734 L3.73027214,11.8426892 C3.52052445,12.0524369 3.17953796,12.0524369 2.97096204,11.8426892 Z" id="路径" fill="#4B4B4D"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                            <g id="Solved" transform="translate(767.000000, 0.000000)">
+                                <polygon id="矩形备份-7" fill="#66A0D9" points="-1.81195405e-12 0 385 0 385 36 -1.81195405e-12 36 19.9077563 18.2013117"></polygon>
+                                <g id="编组-2" transform="translate(158.999998, 8.000000)">
+                                    <text id="Solved" font-family="OpenSans, Open Sans" font-size="14" font-weight="normal" line-spacing="22" fill="#FFFFFF">
+                                        <tspan x="26.0000046" y="15">Solved</tspan>
+                                    </text>
+                                    <g id="icon" transform="translate(0.000000, 1.000000)">
+                                        <ellipse id="椭圆形" fill="#FFFFFF" cx="10.0000023" cy="10" rx="10.0000023" ry="10"></ellipse>
+                                        <g id="dot" transform="translate(4.000000, 4.000000)" fill-rule="nonzero">
+                                            <rect id="矩形" fill="#000000" opacity="0" x="0" y="0" width="12.0000046" height="12"></rect>
+                                            <path d="M1.50066597,5 C0.672298355,5 3.63797881e-12,5.67207467 3.63797881e-12,6.50016669 C3.63797881e-12,7.03622625 0.285460016,7.53094788 0.749666023,7.79897766 C1.21387203,8.06700745 1.78612599,8.06700745 2.250332,7.79897766 C2.714538,7.53094788 3,7.03622625 3,6.50016669 C3.00133194,5.67207467 2.32903359,5 1.50066597,5 Z M7.25033348,5.20104468 C6.78612717,4.93298511 6.21387283,4.93298511 5.74966652,5.20104468 C5.2854602,5.46910425 5,5.96388086 5,6.5 C5,7.03611914 5.2854602,7.53089575 5.74966652,7.79895532 C6.21387283,8.06701489 6.78612717,8.06701489 7.25033348,7.79895532 C7.7145398,7.53089575 8,7.03611914 8,6.5 C8,5.96388086 7.7145398,5.46910425 7.25033348,5.20104468 Z M11.2516639,5.20104468 C10.7874583,4.93298511 10.2152049,4.93298511 9.75099928,5.20104468 C9.28679369,5.46910425 9,5.96388086 9,6.5 C9,7.03611914 9.28545976,7.53089575 9.74966536,7.79895532 C10.2138709,8.06701489 10.7861244,8.06701489 11.25033,7.79895532 C11.7145356,7.53089575 12,7.03611914 12,6.5 C12.0013293,5.96388086 11.7158695,5.46910425 11.2516639,5.20104468 L11.2516639,5.20104468 Z" id="形状" fill="#66A0D9"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

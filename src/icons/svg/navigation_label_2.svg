@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="28px" viewBox="0 0 29 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>导航icon1-28px</title>
+    <g id="2.-导航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2-内容导航-Content-Navigation" transform="translate(-686.000000, -2417.000000)">
+            <g id="2.2.4-标签页" transform="translate(540.000000, 2223.000000)">
+                <g id="导航/横向导航/顶部锚点导航" transform="translate(0.000000, 175.000000)">
+                    <g id="导航icon1-28px" transform="translate(146.407767, 19.000000)">
+                        <rect id="矩形" fill="#FFFFFF" opacity="0" x="0" y="0" width="28" height="28"></rect>
+                        <path d="M23.1,20.9 L9.3,20.9 C7.6,20.9 6.2,19.5 6.2,17.8 L6.2,6.1 C6.2,4.4 7.6,3 9.3,3 L23.1,3 C24.8,3 26.2,4.4 26.2,6.1 L26.2,17.8 C26.2,19.5 24.8,20.9 23.1,20.9 Z M9.3,5 C8.7,5 8.2,5.5 8.2,6.1 L8.2,17.8 C8.2,18.4 8.7,18.9 9.3,18.9 L23.1,18.9 C23.7,18.9 24.2,18.4 24.2,17.8 L24.2,6.1 C24.2,5.5 23.7,5 23.1,5 L9.3,5 Z" id="形状" fill="#89898C" fill-rule="nonzero"></path>
+                        <path d="M18.8,25.1 L5.1,25.1 C3.4,25.1 2,23.7 2,22 L2,10.4 C2,8.7 3.4,7.3 5.1,7.3 L5.1,7.3 L5.1,7.3 L6.1,7.3 L6.1,9.3 L5.1,9.3 C4.5,9.3 4,9.8 4,10.4 L4,22 C4,22.6 4.5,23.1 5.1,23.1 L18.9,23.1 C19.5,23.1 20,22.6 20,22 L20,20.9 L22,20.9 L22,22 C22,23.7 20.6,25.1 18.8,25.1 Z" id="路径" fill="#000000" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,251 @@
+@import '../../../../../styles/common.module.scss';
+.select {
+  margin-top: 80px;
+}
+.select_box {
+  display: flex;
+}
+.select_menu {
+  display: flex;
+  flex-direction: column;
+  &_bottom {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0px;
+    //   right: 40px;
+    //   height: 0;
+    //   font-size: 0;
+    //   line-height: 0;
+    //   border-left: 12px solid transparent;
+    //   border-right: 12px solid transparent;
+    //   border-bottom: 12px solid $colorff;
+    //   filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.1));
+    // }
+    img{
+      position: absolute;
+      top: 0;
+      right: 40px;
+    }
+    &_box {
+      width: 268px;
+      height: 401px;
+      background: #fff;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      margin-top: 10px;
+    }
+    &_name {
+      display: flex;
+      flex-direction: column;
+    }
+    &_name div:first-child {
+      height: 30px;
+      line-height: 30px;
+      color: #19191a;
+      font-size: 20px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    &_name div:last-child {
+      height: 20px;
+      line-height: 20px;
+      color: #646466;
+      font-size: 13px;
+      font-family: OpenSans;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: $colore5;
+        top: 40px;
+        left: 0;
+      }
+    }
+    &_account {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      position: relative;
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        width: 100%;
+        background: #e5e5e5;
+        bottom: 0;
+        left: 0;
+      }
+    }
+    &_account div:first-child {
+      height: 20px;
+      line-height: 20px;
+      font-size: 13px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      color: #646466;
+      margin-bottom: 12px;
+    }
+    &_item {
+      height: 22px;
+      line-height: 22px;
+      color: #0060bf;
+      font-size: 14px;
+      font-family: OpenSans;
+      margin-bottom: 12px;
+    }
+    &_item:last-child {
+      margin-bottom: 20px;
+    }
+    &_recen,
+    &_out {
+      padding: 12px 0;
+      height: 46px;
+      line-height: 22px;
+      font-size: 14px;
+      font-family: OpenSans;
+      color: #0060bf;
+      border-bottom: 1px solid $colore5;
+    }
+    &_out {
+      border-bottom: none;
+    }
+  }
+}
+
+.select_sign {
+  &_box {
+    width: 268px;
+    height: 317px;
+    background: #ffffff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 10px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      right: 40px;
+      height: 0;
+      font-size: 0;
+      line-height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 12px solid $colorff;
+      filter: drop-shadow(0px 2px 8px rgba(0, 0, 0, 0.1));
+    }
+  }
+  &_sign {
+    width: 228px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: $color19;
+    font-size: $font14;
+    font-family: OpenSans;
+    border-radius: 3px;
+    border: 1px solid #4b4b4d;
+  }
+  &_name {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+    border-bottom: 1px solid $colore5;
+  }
+  &_name div {
+    height: 20px;
+    line-height: 20px;
+    color: #89898c;
+    font-size: 13px;
+    font-family: OpenSans;
+  }
+  &_name div:first-child {
+    margin-left: 10px;
+  }
+  &_name div:last-child {
+    color: #0060bf;
+  }
+  &_account {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    position: relative;
+  }
+  &_account div:first-child {
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    color: #646466;
+    margin-bottom: 12px;
+  }
+  &_item {
+    height: 22px;
+    line-height: 22px;
+    color: #0060bf;
+    font-size: 14px;
+    font-family: OpenSans;
+    margin-bottom: 12px;
+  }
+  &_item:last-child {
+    margin-bottom: 20px;
+  }
+}
+
+.select_menu_help {
+  height: 325px;
+  width: 268px;
+  padding-top: 10px;
+  box-sizing: border-box;
+  position: relative;
+  &_box {
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  }
+  img{
+    position: absolute;
+    top: 0;
+    right: 40px;
+  }
+  &_item {
+    padding: 16px 0;
+    display: flex;
+    border-bottom: 1px solid $colore5;
+    i {
+      font-size: 16px;
+      margin-right: 8px;
+      margin-top: 4px;
+    }
+  }
+  &_text {
+    font-size: 14px;
+    font-family: OpenSans;
+    color: #19191a;
+    line-height: 22px;
+  }
+  &_text div:last-child{
+     color: #0060BF;
+  }
+  &_item:last-child{
+    border-bottom: none;
+  }
+  &_item:last-child &_text div:last-child{
+     color: $color64;
+  }
+}

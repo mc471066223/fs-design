@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="678px" height="40px" viewBox="0 0 678 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>导航/步骤条/基础步骤条（弹窗）</title>
+    <g id="2.-导航" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.2-内容导航-Content-Navigation" transform="translate(-540.000000, -1412.000000)">
+            <g id="2.2.3-步骤条" transform="translate(540.000000, 1228.000000)">
+                <g id="横向步骤条" transform="translate(0.000000, 94.000000)">
+                    <g id="导航/步骤条/基础步骤条（弹窗）" transform="translate(0.000000, 90.000000)">
+                        <path d="M676,2 L676,38 L2,38 L2,2 L676,2 Z" id="矩形" stroke="#FFFFFF" stroke-width="4" fill="#F7F7F7"></path>
+                        <path d="M484.827023,2 L505.027722,19.2393396 C505.237773,19.4185974 505.355279,19.6660247 505.375458,19.9211502 C505.39279,20.1402716 505.338327,20.3650717 505.209037,20.5572379 L505.209037,20.5572379 L484.825497,38 L2,38 L2,2 L484.827023,2 Z" id="矩形" stroke="#FFFFFF" stroke-width="4" fill="#F7F7F7"></path>
+                        <path d="M316.827023,2 L337.027722,19.2393396 C337.237773,19.4185974 337.355279,19.6660247 337.375458,19.9211502 C337.39279,20.1402716 337.338327,20.3650717 337.209037,20.5572379 L337.209037,20.5572379 L316.825497,38 L2,38 L2,2 L316.827023,2 Z" id="矩形" stroke="#FFFFFF" stroke-width="4" fill="#F7F7F7"></path>
+                        <path d="M148.196908,2 L168.021195,19.9969858 L148.196722,38 L2,38 L2,2 L148.196908,2 Z" id="矩形" stroke="#FFFFFF" stroke-width="4" fill="#F7F7F7"></path>
+                        <text id="1.-Customized" font-family="OpenSans-Semibold, Open Sans" font-size="13" font-weight="500" line-spacing="20" fill="#646466">
+                            <tspan x="33" y="24">1. Customized</tspan>
+                        </text>
+                        <text id="2.-Manufacturing" font-family="OpenSans-Semibold, Open Sans" font-size="13" font-weight="500" line-spacing="20" fill="#646466">
+                            <tspan x="193" y="24">2. Manufacturing</tspan>
+                        </text>
+                        <text id="3.-Shipped" font-family="OpenSans-Semibold, Open Sans" font-size="13" font-weight="500" line-spacing="20" fill="#646466">
+                            <tspan x="381" y="24">3. Shipped</tspan>
+                        </text>
+                        <text id="4.-Arrived" font-family="OpenSans-Semibold, Open Sans" font-size="13" font-weight="500" line-spacing="20" fill="#646466">
+                            <tspan x="559" y="24">4. Arrived</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

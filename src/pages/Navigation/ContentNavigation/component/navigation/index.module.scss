@@ -1,0 +1,40 @@
+@import '../../../../../styles/common.module.scss';
+.navigation,
+.navigation_1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  &_text {
+    height: $lh20;
+    line-height: $lh20;
+    color: $color64;
+    font-size: 13px;
+    font-family: OpenSans;
+  }
+  &_line {
+    padding: 0 8px;
+  }
+  :last-child {
+    color: $color19;
+    font-weight: bold;
+    font-family: OpenSans-Semibold, OpenSans;
+  }
+}
+
+.navigation_1 {
+  margin-bottom: 88px;
+  position: relative;
+  svg{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    width: 12px;
+    height: 16px;
+  }
+}
+
+.navigation_1 div:nth-child(3) {
+  color: #19191a;
+  font-size: 13px;
+  font-family: OpenSans;
+}

@@ -82,7 +82,29 @@ const config = [
           {
             path: '/navigation/content',
             title: '内容导航 Content Navigation',
-            component: lazy(() => import('@/pages/Home'))
+            component: lazy(() => import('@/pages/Navigation/ContentNavigation'))
+          }
+        ]
+      },
+      {
+        path: '/entry',
+        title: '导航',
+        component: BlankLayout,
+        routes: [
+          {
+            path: '/entry/text',
+            title: '文本录入 Text Entry',
+            component: lazy(() => import('@/pages/Entry/TextEntry'))
+          },
+          {
+            path: '/entry/select',
+            title: '选择录入 Select Entry',
+            component: lazy(() => import('@/pages/Entry/SelectEntry'))
+          },
+          {
+            path: '/entry/upload',
+            title: '上传 Upload',
+            component: lazy(() => import('@/pages/Entry/UploadEntry'))
           }
         ]
       }
