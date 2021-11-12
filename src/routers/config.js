@@ -88,7 +88,7 @@ const config = [
       },
       {
         path: '/entry',
-        title: '导航',
+        title: '数据录入',
         component: BlankLayout,
         routes: [
           {
@@ -105,6 +105,33 @@ const config = [
             path: '/entry/upload',
             title: '上传 Upload',
             component: lazy(() => import('@/pages/Entry/UploadEntry'))
+          }
+        ]
+      },
+      {
+        path: '/data',
+        title: '数据展示',
+        component: BlankLayout,
+        routes: [
+          {
+            path: '/data/image',
+            title: '图片 Image',
+            component: lazy(() => import('@/pages/DataShow/Image'))
+          },
+          {
+            path: '/data/table',
+            title: '表格 Table',
+            component: lazy(() => import('@/pages/DataShow/Table'))
+          },
+          {
+            path: '/data/banner',
+            title: '广告 Banner',
+            component: lazy(() => import('@/pages/DataShow/Banner'))
+          },
+          {
+            path: '/data/card',
+            title: '卡片 Card',
+            component: lazy(() => import('@/pages/DataShow/Card'))
           }
         ]
       }

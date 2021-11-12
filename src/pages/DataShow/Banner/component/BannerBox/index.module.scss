@@ -1,0 +1,220 @@
+@import '../../../../../styles/common.module.scss';
+.Banner_box_conventional {
+  width: 1200px;
+  height: 390px;
+  background: $colorf7;
+  padding-top: 110px;
+  padding-left: 180px;
+  position: relative;
+  &_title {
+    height: 48px;
+    line-height: 48px;
+    font-size: 40px;
+    font-family: OpenSans;
+    color: $color64;
+    &_number {
+      position: absolute;
+      top: 45px;
+      left: 142px;
+      color: $colorc0;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &_line {
+      width: 15px;
+      height: 109px;
+      border-top: 1px solid $colorc0;
+      border-bottom: 1px solid $colorc0;
+      position: absolute;
+      top: 0;
+    }
+    &_line::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 109px;
+      border-left: 1px solid $colorc0;
+      top: -1px;
+      left: 7px;
+    }
+  }
+  &_content {
+    height: $lh26;
+    line-height: $lh26;
+    color: $color64;
+    font-size: $font16;
+    font-family: OpenSans;
+    margin-top: $mg20;
+    margin-bottom: 36px;
+    &_number {
+      position: absolute;
+      top: 155px;
+      left: 142px;
+      color: $colorc0;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &_line {
+      width: 15px;
+      height: 20px;
+      border-top: 1px solid $colorc0;
+      border-bottom: 1px solid $colorc0;
+      position: absolute;
+      top: 158px;
+    }
+    &_line::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 20px;
+      border-left: 1px solid $colorc0;
+      top: -1px;
+      left: 7px;
+    }
+  }
+  &_more {
+    display: flex;
+    align-items: center;
+    position: relative;
+    :first-child {
+      height: 22px;
+      line-height: 22px;
+      color: $color64;
+      font-size: 14px;
+      font-family: MicrosoftYaHei;
+    }
+    i {
+      font-size: 12px;
+      color: #4b4b4d;
+      margin-top: 2px;
+    }
+    &_number {
+      position: absolute;
+      top: -30px;
+      left: -37px;
+      color: $colorc0;
+      font-size: 14px;
+      line-height: 24px;
+    }
+    &_line {
+      width: 14px;
+      height: 35px;
+      border-top: 1px solid $colorc0;
+      border-bottom: 1px solid $colorc0;
+      position: absolute;
+      top: -35px;
+    }
+    &_line::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 35px;
+      border-left: 1px solid $colorc0;
+      top: -1px;
+      left: 7px;
+    }
+  }
+}
+
+.Banner_box_special {
+  width: 1200px;
+  height: 300px;
+  background: $colorf7;
+  padding-top: 98px;
+  padding-left: 180px;
+  position: relative;
+  &_title {
+    height: 48px;
+    line-height: 48px;
+    font-size: 40px;
+    font-family: OpenSans;
+    color: $color64;
+  }
+  &_number {
+    position: relative;
+    color: $colorc0;
+    font-size: 14px;
+    height: 28px;
+    :first-child{
+      margin-left: -38px;
+      line-height: $lh24;
+    }
+  }
+  &_line {
+    width: 15px;
+    height: 28px;
+    border-top: 1px solid $colorc0;
+    border-bottom: 1px solid $colorc0;
+    position: absolute;
+    top: 0;
+  }
+  &_line::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 28px;
+    border-left: 1px solid $colorc0;
+    top: -1px;
+    left: 7px;
+  }
+  &_content {
+    height: $lh26;
+    line-height: $lh26;
+    color: $color64;
+    font-size: $font16;
+    font-family: OpenSans;
+    margin-bottom: 36px;
+  }
+}
+
+.Banner_box_small {
+  width: 1200px;
+  height: 200px;
+  background: $colorf7;
+  padding-top: 62px;
+  padding-left: 180px;
+  position: relative;
+  &_title {
+    height: 34px;
+    line-height: 34px;
+    font-size: 26px;
+    font-family: OpenSans;
+    color: $color64;
+  }
+  &_number {
+    position: relative;
+    color: $colorc0;
+    font-size: 14px;
+    height: 18px;
+    :first-child{
+      position: absolute;
+      top: -4px;
+      margin-left: -38px;
+      line-height: 24px;
+    }
+  }
+  &_line {
+    width: 15px;
+    height: 18px;
+    border-top: 1px solid $colorc0;
+    border-bottom: 1px solid $colorc0;
+    position: absolute;
+    top: 0;
+  }
+  &_line::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 18px;
+    border-left: 1px solid $colorc0;
+    top: -1px;
+    left: 7px;
+  }
+  &_content {
+    height: 22px;
+    line-height: 22px;
+    color: $color64;
+    font-size: $font14;
+    font-family: OpenSans;
+  }
+}

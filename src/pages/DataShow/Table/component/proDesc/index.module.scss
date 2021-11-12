@@ -1,0 +1,30 @@
+@import '../../../../../styles/common.module.scss';
+.proDesc_cotainer {
+  width: 1200px;
+}
+.proDesc_box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding-left: 7px;
+  &_item {
+    width: 275.22px;
+    line-height: 24px;
+    margin-right: 25px;
+  }
+  &_item:nth-child(2n+1){
+    color: $color19;
+  }
+  &_item:nth-child(2n){
+    color: $color64;
+  }
+}
+
+.proDesc_box:nth-child(2n + 1) {
+  background-color: $colorf7;
+}
+
+.prodDesc_img{
+  width: 1120px;
+  height: 735px;
+}

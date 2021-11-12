@@ -1,0 +1,31 @@
+@import "../../../../../styles/common.module.scss";
+.flexBox,
+.flexBox_top {
+  display: flex;
+  align-items: end;
+}
+.flexBox_top {
+  margin-top: 40px;
+}
+.box_size {
+  display: flex;
+  // margin-top: 64px;
+  &_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    border-radius: 3px;
+    border: 1px solid $colorcc;
+    margin-right: 60px;
+  }
+  &_number,
+  &_text{
+    color: $color19;
+    line-height: 24px;
+    font-family: MicrosoftYaHei;
+    font-size: $font14;
+  }
+}

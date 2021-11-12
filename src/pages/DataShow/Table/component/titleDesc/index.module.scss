@@ -1,0 +1,24 @@
+@import '../../../../../styles/common.module.scss';
+.titleBox {
+  display: flex;
+  align-items: center;
+  height: $lh24;
+  line-height: $lh24;
+  margin-bottom: 10px;
+  &_text {
+    margin-right: 20px;
+    color: $color64;
+    font-size: $font14;
+    font-family: MicrosoftYaHei;
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+    &_circle {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      margin-right: 10px;
+    }
+  }
+}

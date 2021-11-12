@@ -1,0 +1,50 @@
+@import '../../../../../styles/common.module.scss';
+.named_box {
+  display: flex;
+  &_left,
+  &_right,
+  &_operationList,
+  &_statusList {
+    width: 433px;
+    height: 462px;
+    border: 1px solid $colore5;
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 80px;
+      height: 42px;
+      line-height: 42px;
+      color: $color64;
+      border-bottom: 1px solid $colore5;
+      :last-child {
+        width: 54px;
+      }
+    }
+    &_item:last-child {
+      border-bottom: none;
+    }
+  }
+  &_right {
+    width: 365px;
+    border-left: 0;
+  }
+  &_operationList {
+    width: 355px;
+    height: 464px;
+    &_item {
+      :last-child {
+        width: 28px;
+      }
+    }
+  }
+  &_statusList {
+    width: 374px;
+    height: 294px;
+    &_item {
+      :last-child {
+        width: 56px;
+      }
+    }
+  }
+}

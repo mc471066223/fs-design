@@ -1,0 +1,172 @@
+.Box {
+  display: flex;
+}
+.BoxCard {
+  width: 291px;
+  height: 504px;
+  background: #ffffff;
+  padding: 20px 16px;
+  margin-right: 12px;
+  position: relative;
+  &_status {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    padding: 3px 15px;
+    font-size: 12px;
+    &_hot {
+      background-color: #feefe5;
+      color: #f56300;
+    }
+    &_new {
+      color: #10a300;
+      background-color: #ebf8e7;
+    }
+  }
+  &_imgBox {
+    display: flex;
+    align-items: flex-end;
+    img {
+      padding-left: 40px;
+    }
+    &_play {
+      width: 24px;
+      height: 16px;
+      border: 1px solid #89898c;
+      border-radius: 8px;
+      margin-left: 7px;
+      position: relative;
+      &::after {
+        position: absolute;
+        content: '';
+        border-left: 6px solid #89898c;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        left: 45%;
+        top: 50%;
+        margin-top: -5px;
+      }
+    }
+  }
+  &_type {
+    display: flex;
+    height: 30px;
+    margin: 12px 0;
+    &_item {
+      height: 30px;
+      box-sizing: border-box;
+      padding: 5px 9px;
+      background: #ffffff;
+      border-radius: 2px;
+      border: 1px solid #cccccc;
+      line-height: 20px;
+      margin-right: 4px;
+      font-size: 13px;
+      font-family: OpenSans;
+      color: #19191a;
+    }
+    &_item:first-child {
+      background: #f7f7f7;
+      border: 2px solid #646466;
+    }
+    &_item:last-child {
+      background: #f7f7f7;
+      border: 1px solid #cccccc;
+    }
+  }
+  &_content {
+    height: 48px;
+    line-height: 22px;
+    color: #19191a;
+    font-weight: 600;
+    word-break: break-all;
+    font-size: 14px;
+    font-family: OpenSans-Semibold, OpenSans;
+  }
+  &_proDesc,
+  &_proDescExtra {
+    line-height: 18px;
+    font-size: 12px;
+    font-family: OpenSans;
+    white-space: nowrap;
+    color: #89898c;
+    &_top {
+      margin-top: 8px;
+    }
+    &_bottom {
+      margin-bottom: 12px;
+    }
+  }
+  &_proDescExtra {
+    margin-top: 8px;
+    margin-bottom: 12px;
+  }
+  &_money {
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    color: #19191a;
+    margin-bottom: 12px;
+  }
+  &_address {
+    display: flex;
+    align-items: center;
+    i {
+      font-size: 12px;
+      margin-right: 8px;
+    }
+    div {
+      font-size: 13px;
+      font-family: OpenSans;
+      color: #89898c;
+      line-height: 20px;
+    }
+  }
+  &_address:last-child {
+    margin-bottom: 12px;
+  }
+  &_saleBox {
+    display: flex;
+    margin-top: 12px;
+  }
+  &_sold,
+  &_views {
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: OpenSans;
+    :first-child {
+      color: #a65300;
+      margin-right: 2px;
+    }
+    :last-child {
+      color: #89898c;
+    }
+  }
+  &_views {
+    margin-left: 20px;
+    :first-child {
+      color: #0060bf;
+      margin-right: 2px;
+      position: relative;
+    }
+    :first-child::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 10px;
+      border-left: 1px solid #E5E5E5;
+      left: -10px;
+      top: 5px;
+    }
+  }
+}
+.BoxCard:last-child {
+  margin-right: 0;
+}

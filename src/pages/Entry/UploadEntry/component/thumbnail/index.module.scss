@@ -1,0 +1,50 @@
+.thumbnail_box {
+  width: 120px;
+  height: 120px;
+  padding: 5px;
+  border-radius: 2px;
+  border: 1px solid #89898c;
+  margin-right: 20px;
+  position: relative;
+  img {
+    width: 108px;
+    height: 108px;
+  }
+  svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 60px;
+    height: 24px;
+    margin-left: -30px;
+    margin-top: -12px;
+  }
+}
+
+.avatar_box {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 40px;
+  border-radius: 2px;
+  border: 1px solid #e5e5e5;
+  i {
+    margin: 0 13px 0 30px;
+    font-size: 14px;
+    color: #4b4b4d;
+  }
+  :last-child {
+    line-height: 20px;
+    font-size: 13px;
+    font-family: OpenSans;
+    color: #646466;
+  }
+}
+
+.avatar_img{
+  margin-top: 10px;
+  svg{
+    width: 80px;
+    height: 80px;
+  }
+}

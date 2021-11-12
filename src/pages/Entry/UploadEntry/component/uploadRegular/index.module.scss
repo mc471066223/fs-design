@@ -1,0 +1,26 @@
+.upload_box {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  &_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 175px;
+    height: 38px;
+    padding: 9px 12px;
+    border-radius: 2px;
+    border: 1px solid #cccccc;
+    margin-right: 12px;
+    :first-child {
+      line-height: 20px;
+      font-size: 13px;
+      font-family: OpenSans;
+      color: #19191a;
+    }
+    i {
+      color: #19191A;;
+      font-size: 12px;
+    }
+  }
+}

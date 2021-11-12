@@ -1,0 +1,30 @@
+const dataJson = [
+  '上传 Upload',
+  '上传规则、简单点击上传、显示缩略图、拖拽上传',
+  '上传规则',
+  '· 上传文件气泡提示统一：Please use a PDF，JPG，PNG，DOCX，XLS，XLSX or TXT file. Maximum file size 5M；',
+  '上传照片气泡（评论）提示：Allow files of type of JPG,PNG.Maximum file size:5MB；',
+  '· 超过5M提示：Maximum file size 5M；',
+  '· 上传文件限制（视需求而定）；',
+  '· 文件名每排展示按当前设计的固定宽度限制，超过转行展示；',
+  '· 文件名内的字符限制（前8…后8）；',
+  '· 文件框颜色交互统一使用灰色；',
+  '· 传文件文字统一：Upload File；',
+  '简单点击上传',
+  '一般用于单个上传且不需要预览效果的文件上传，点击按钮弹出文件选择框。',
+  '默认状态',
+  'Hover气泡文案展示',
+  '文件超过5M',
+  '上传图片',
+  '显示缩略图上传',
+  '一般用于图片文件上传，用户可以上传图片并在列表中显示缩略图。',
+  '默认状态',
+  'Hover气泡文案展示',
+  '文件超过5M',
+  '上传图片',
+  '图片上传',
+  '头像上传',
+  'Only support JPG, GIF, PNG, JPEG, BMP. Maximum file size is 300KB.'
+];
+
+export { dataJson };

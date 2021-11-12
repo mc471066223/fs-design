@@ -1,15 +1,18 @@
 import React, { useState } from 'react';
 import { Upload, Input, Tooltip, message } from 'antd';
 import { LoadingOutlined, PlusOutlined } from '@ant-design/icons';
+import ComponentHoc from '../componentHoc';
 import style from './index.module.scss';
 import SvgIcon from '../svgIcon/index';
 const { TextArea } = Input;
 
 function UploadCom(props) {
   const {
+    slots,
     placeholder,
     Comments,
     type = 0,
+    defaultVisible = false,
     totipTetx,
     beforeLimit = false,
     uploadText,
@@ -18,10 +21,9 @@ function UploadCom(props) {
   } = props;
   const [value, setValue] = useState('');
   const [loading, setLoading] = useState(false);
-  const UploadButton = (
+  const UploadButton = () => (
     <div>
-      {loading ? <LoadingOutlined /> : <PlusOutlined />}
-      <div style={{ marginTop: 8 }}>Upload</div>
+      <div className={style.upload_button}>{loading ? <LoadingOutlined /> : <PlusOutlined />}</div>
     </div>
   );
 
@@ -62,14 +64,16 @@ function UploadCom(props) {
           }}
           value={value}
         />
-        <div className={style.upload_box_item}>
+        <div
+          className={[type === 1 ? style.upload_box_extramg : '', style.upload_box_item].join(' ')}>
+           {slots['default']}
           <Upload
             beforeUpload={beforeLimit && beforeUpload}
             onChange={handleChange}
             multiple={multipleBoolean}>
             {type === 0 ? (
               <div className={style.upload_box_item_repeat}>
-                <SvgIcon iconName="repeat" svgClassName={"repeat"}/>
+                <SvgIcon iconName="repeat" svgClassName={'repeat'} />
                 <div className={style.upload_box_item_uploadText}>
                   {uploadText || 'Upload File'}
                 </div>
@@ -82,6 +86,8 @@ function UploadCom(props) {
             placement="right"
             trigger={'click'}
             color={'white'}
+            getPopupContainer={triggerNode => triggerNode.parentNode}
+            defaultVisible={defaultVisible}
             title={
               totipTetx ||
               'Please use a PDF, JPG, PNG, DOC, DOCX, XLS, XLSX or TXT file.Maximum file size 5M.'
@@ -97,4 +103,4 @@ function UploadCom(props) {
   );
 }
 
-export default UploadCom;
+export default ComponentHoc(UploadCom);
