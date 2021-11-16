@@ -1,7 +1,7 @@
 import React from 'react';
-import BorderSize from './component/borderSize';
-import Applicable from './component/applicable';
-import LabelList from './component/labelList';
+import BorderSize from './component/BorderSize';
+import Applicable from './component/Applicable';
+import LabelList from './component/LabelList';
 
 function Border() {
   return (

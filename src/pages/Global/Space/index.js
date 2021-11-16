@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import dataJson, { number } from './data';
+import React from 'react';
+import { data, number } from './data';
 import BasicTitle from '@/components/BasicTitle';
 import Right4n from './component/Right4n';
 import RightSpace from './component/RightSpace';
@@ -11,15 +11,13 @@ import cha from '@/assets/images/Global/Space/cha.png';
 import cart from '@/assets/images/Global/Space/cart.png';
 import style from './index.module.scss';
 function Space() {
-  const [number1, setNumber] = useState(number);
-  const [data, setData] = useState(dataJson);
   return (
     <div className={style.page_content}>
       <BasicTitle pageTitle={data[0]} pageStitle={data[1]} />
       <div>
         <BasicTitle title={data[2]} content={data[3]} />
         <div className={style.page_content_fx1}>
-          {number1.map((item, index) => {
+          {number.map((item, index) => {
             return (
               <span key={index} className={style.page_content_fx1_item}>
                 {item}

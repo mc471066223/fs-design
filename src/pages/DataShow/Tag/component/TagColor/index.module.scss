@@ -1,0 +1,71 @@
+.frontDesk {
+  display: flex;
+  align-items: center;
+  font-family: MicrosoftYaHei;
+  margin-bottom: 13px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #19191a;
+  &_statusPoints {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    &_bgc {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+    }
+    &_text {
+      width: 85px;
+      margin-left: 17px;
+      margin-right: 40px;
+      box-sizing: border-box;
+    }
+  }
+  &_englishPoinst {
+    display: flex;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    &_bgc {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      position: absolute;
+    }
+    &_text {
+      width: 67px;
+      margin-left: 17px;
+      margin-right: 40px;
+      box-sizing: border-box;
+    }
+  }
+  &_color {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    &_bgc {
+      border-radius: 3px;
+      width: 16px;
+      height: 16px;
+    }
+    &_text {
+      margin-left: 17px;
+      margin-right: 40px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+.credit {
+  width: 87px;
+  padding: 1px 8px;
+  font-size: 12px;
+  font-family: OpenSans;
+  background-color: #F19A5D;
+  color: #ffffff;
+  line-height: 18px;
+  border-radius: 2px;
+}

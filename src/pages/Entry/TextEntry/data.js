@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '文本录入 Text Entry',
   '文本框、文本域、搜索',
   '文本框',
@@ -53,4 +53,4 @@ const dataJson = [
   'ethernet cable',
 ];
 
-export { dataJson };
+export { data };

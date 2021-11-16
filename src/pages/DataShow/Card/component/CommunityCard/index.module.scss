@@ -1,0 +1,53 @@
+@import '../../../../../styles/common.module.scss';
+.community_box {
+  width: 472px;
+  height: 385px;
+  background-color: $colore5;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  &_img {
+    width: 392px;
+    height: 213px;
+    position: relative;
+    :first-child {
+      position: absolute;
+      height:$lh24;
+      display: flex;
+      align-items: center;
+      padding: 3px 9px 3px 11px;
+      color: #ffffff;
+      background: rgba(0, 96, 191, 0.6);
+      font-size: 12px;
+      font-family: OpenSans;
+      left: 0;
+      top: 0;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
+    svg{
+      position: absolute;
+      right: 8px;
+      bottom: 8px;
+      width: 66px;
+      height: 28px;
+    }
+  }
+  &_container {
+    flex: 1;
+    background-color: $colorff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    &_text {
+      margin-top: 12px;
+      line-height: $lh24;
+      color: $color19;
+      font-weight: 600;
+      font-size: $font16;
+      font-family: OpenSans-Semibold, OpenSans;
+    }
+  }
+}

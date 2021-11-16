@@ -1,0 +1,55 @@
+@import '../../../../../styles/common.module.scss';
+.label_box {
+  width: 472px;
+  height: 468px;
+  background-color: $colore5;
+  padding: 48px 40px;
+  display: flex;
+  flex-direction: column;
+  &_container {
+    flex: 1;
+    background-color: $colorff;
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    &_text {
+      margin-top: 12px;
+      line-height: $lh24;
+      color: $color19;
+      font-weight: 600;
+      font-size: $font16;
+      font-family: OpenSans-Semibold, OpenSans;
+    }
+    &_label {
+      display: flex;
+      margin-top: 10px;
+      div {
+        padding: 2px 4px;
+        background: #efefef;
+        border-radius: 2px;
+        font-size: 13px;
+        font-family: OpenSans;
+        color: $color64;
+        line-height: $lh20;
+        margin-right: 8px;
+      }
+    }
+    &_more {
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      color: #0060bf;
+      :first-child {
+        line-height: 22px;
+      }
+      i {
+        margin-top: 1px;
+        font-size: 12px;
+      }
+    }
+  }
+  img {
+    width: 392px;
+    height: 213px;
+  }
+}

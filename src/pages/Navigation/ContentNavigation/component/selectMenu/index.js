@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 import shadow from '@/assets/images/Navigation/content/shadow_san.png';
 
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   const contentList = ['Order History', 'Order Review', 'Active Quote', 'Saved Carts'];
   const helpList = [
     { icon: 'iconfont iconfs_2020091121icon', text: [data[45], data[46]] },

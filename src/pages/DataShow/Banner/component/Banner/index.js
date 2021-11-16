@@ -1,10 +1,8 @@
 import React from 'react';
-import { dataJson } from '../../data';
+import { dataJson as data } from '../../data';
 import BasicTitle from '@/components/BasicTitle';
 import BannerBox from '../BannerBox';
-
 const Index = () => {
-  const data = dataJson;
   return (
     <div>
       <BasicTitle pageTitle={data[0]} content={data[1]} />

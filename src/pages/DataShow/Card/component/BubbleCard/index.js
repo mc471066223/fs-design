@@ -1,6 +1,6 @@
 import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson as data } from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 const listText = [
   { text: '文字颜色色值', color: '#646466' },

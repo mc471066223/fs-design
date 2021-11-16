@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import dataJson from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 const ColoringProp = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <>
       <BasicTitle
@@ -18,7 +17,7 @@ const ColoringProp = () => {
       <div className={style.mainColor_box}>
         <div className={style.mainColor_box_top}>
           <div className={style.mainColor_box_top_color}>#C00000</div>
-          <div>H: 0     S:100     B:75</div>
+          <div>H: 0 S:100 B:75</div>
         </div>
         <div className={style.mainColor_box_bottom}>
           {['80%', '70%', '50%', '30%', '10%'].map((item, index) => (

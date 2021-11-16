@@ -1,6 +1,6 @@
 import React from 'react';
-import FontGauge from './component/fontGauge';
-import Standard from './component/standard';
+import FontGauge from './component/FontGauge';
+import Standard from './component/Standard';
 
 function Typorgraphy() {
   return (

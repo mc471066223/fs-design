@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import InputCom from '@/components/Input';
 function Index() {
-  const [data, setData] = useState(dataJson);
-  // 21
   return (
     <div>
       <BasicTitle

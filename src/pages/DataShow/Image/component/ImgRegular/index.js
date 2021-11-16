@@ -1,7 +1,7 @@
 import React from 'react';
 import { dataJson, regularList, operationList, statusList } from '../../data';
 import BasicTitle from '@/components/BasicTitle';
-import link from '@/assets/images/DataShow/image/link.png';
+import link from '@/assets/images/DataShow/Image/link.png';
 import style from './index.module.scss';
 const Index = () => {
   const data = dataJson;

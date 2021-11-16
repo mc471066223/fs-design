@@ -1,14 +1,13 @@
-import React,{useState} from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import dataJson from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 const Index = () => {
-  const [data, setState] = useState(dataJson);
   return (
     <div className={style.divider}>
-      <BasicTitle title={data[61]}/>
+      <BasicTitle title={data[61]} />
       <div className={style.divider_box}>E5E5E5</div>
-      <BasicTitle title={data[62]}/>
+      <BasicTitle title={data[62]} />
       <div className={style.divider_box1}>F7F7F7</div>
     </div>
   );

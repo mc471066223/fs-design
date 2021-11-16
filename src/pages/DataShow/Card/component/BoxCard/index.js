@@ -1,8 +1,9 @@
 import React from 'react';
+import { cardList } from '../../data';
 import producePng from '@/assets/images/DataShow/Card/product.png';
 import style from './index.module.scss';
 const Index = props => {
-  const { list } = props;
+  let list = cardList || [];
   return (
     <div className={style.Box}>
       {list &&

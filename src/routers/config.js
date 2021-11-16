@@ -1,4 +1,4 @@
-import React, { lazy } from 'react';
+import { lazy } from 'react';
 import BasicLayout from '@/layouts/BasicLayout';
 import BlankLayout from '@/layouts/BlankLayout';
 
@@ -132,6 +132,16 @@ const config = [
             path: '/data/card',
             title: '卡片 Card',
             component: lazy(() => import('@/pages/DataShow/Card'))
+          },
+          {
+            path: '/data/tag',
+            title: '标签 Tag',
+            component: lazy(() => import('@/pages/DataShow/Tag'))
+          },
+          {
+            path: '/data/lanter',
+            title: '走马灯 Revolving lanter',
+            component: lazy(() => import('@/pages/DataShow/Lanter'))
           }
         ]
       }

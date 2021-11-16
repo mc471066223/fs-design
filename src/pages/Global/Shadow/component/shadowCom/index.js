@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import dataJson from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 import bg from '@/assets/images/Global/Shadow/bg.png';
 
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   const contentList = ['Order History', 'Order Review', 'Active Quote', 'Saved Carts'];
   return (
     <div>
@@ -47,7 +46,11 @@ const Index = () => {
                 <div>Account</div>
                 {contentList &&
                   contentList.map((item, index) => {
-                    return <div className={style.shadowCom_right_bottom_item} key={index}>{item}</div>;
+                    return (
+                      <div className={style.shadowCom_right_bottom_item} key={index}>
+                        {item}
+                      </div>
+                    );
                   })}
               </div>
               <div className={style.shadowCom_right_bottom_recen}>Recently Viewed</div>

@@ -1,12 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
 import { Table } from 'antd';
-import { dataJson, dataSource, filterStlye } from '../../data';
+import { data, dataSource, filterStlye } from '../../data';
 import style from './index.module.scss';
-
 const Index = () => {
-  const [data, setData] = useState(dataJson);
-
   const columns = [
     {
       title: '等级与展示',

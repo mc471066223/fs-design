@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '间距 Space',
   '模块间距、元素间距',
   '模块间距',
@@ -19,9 +19,8 @@ const dataJson = [
   '按钮与按钮间距',
   '左右排布：按钮之间间距为10px，主要按钮居右。',
   '垂直排布：按钮之间间距为16px，主要按钮在上方。',
-  "登录输入按钮间距",
+  '登录输入按钮间距'
 ];
 
-export const number = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, '…'];
-
-export default dataJson;
+const number = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, '…'];
+export { data, number };

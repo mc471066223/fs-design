@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import dataJson from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 const ColoringProp = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <>
       <BasicTitle pageTitle={data[0]} pageStitle={data[1]} />

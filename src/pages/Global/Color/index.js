@@ -1,14 +1,14 @@
 import React from 'react';
-import ColoringPro from './component/coloringPro';
-import Neutral from './component/neutral';
-import Auxiliary from './component/auxiliary';
-import MainColor from './component/mainColor';
-import TextColor from './component/textColor';
-import BtnColor from './component/btnColor';
-import IconColor from './component/iconColor';
-import DoubleColor from './component/doubleColor';
-import FrameColor from './component/frameColor';
-import Divider from './component/divider';
+import ColoringPro from './component/ColoringPro';
+import Neutral from './component/Neutral';
+import Auxiliary from './component/Auxiliary';
+import MainColor from './component/MainColor';
+import TextColor from './component/TextColor';
+import BtnColor from './component/BtnColor';
+import IconColor from './component/IconColor';
+import DoubleColor from './component/DoubleColor';
+import FrameColor from './component/FrameColor';
+import Divider from './component/Divider';
 
 import style from './index.module.scss';
 function Color() {

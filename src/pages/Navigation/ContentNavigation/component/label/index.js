@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import SvgIcon from '@/components/svgIcon';
 import style from './index.module.scss';
-
+const activeIndex = 0;
 const Index = () => {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [data, setData] = useState(dataJson);
   const tabsList = [data[29], data[30], data[31], data[32], data[33], data[34], data[35]];
   const newTabsList = [
     { text: data[36], icon: 'navigation_label_1' },
@@ -35,7 +33,9 @@ const Index = () => {
             return (
               <div className={style.label_newTabsList_box} key={index}>
                 <SvgIcon iconName={item.icon} />
-                <div className={activeIndex === index ? style.label_newTabsList_active : ''}>{item.text}</div>
+                <div className={activeIndex === index ? style.label_newTabsList_active : ''}>
+                  {item.text}
+                </div>
               </div>
             );
           })}

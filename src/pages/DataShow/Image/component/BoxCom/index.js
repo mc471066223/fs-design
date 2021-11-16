@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react';
 import style from './index.module.scss';
-import imgW87 from '@/assets/images/DataShow/image/imgW87.png';
+import imgW87 from '@/assets/images/DataShow/Image/imgW87.png';
 
 const Index = props => {
   const { type, imgSize, content, bottom } = props;

@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 import SvgIcon from '@/components/svgIcon';
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle pageTitle={data[0]} content={data[1]} styleClass={{ marginBottom: '80px' }} />
@@ -22,7 +21,7 @@ const Index = () => {
         <div className={style.navigation_text}>{data[5]}</div>
         <div className={style.navigation_line}>/</div>
         <div className={style.navigation_text}>{data[6]}</div>
-        <SvgIcon iconName="navigation_content_mouse"/>
+        <SvgIcon iconName="navigation_content_mouse" />
       </div>
     </div>
   );

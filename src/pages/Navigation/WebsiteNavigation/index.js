@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
 import popup from '@/assets/images/Navigation/website/popup.png';
 import slider from '@/assets/images/Navigation/website/slider.png';
-import { dataJson } from './data';
+import { data } from './data';
 import style from "./index.module.scss";
 function Index() {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle pageTitle={data[0]} content={data[1]} styleClass={{ marginBottom: '80px' }} />

@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '字体 Typography',
   '字体、字号、字色、字重、行高、应用范围',
   'Font 字体总规',
@@ -241,4 +241,4 @@ const filterStlye = (text, index) => {
   );
 };
 
-export { dataJson, dataSource, filterStlye };
+export { data, dataSource, filterStlye };

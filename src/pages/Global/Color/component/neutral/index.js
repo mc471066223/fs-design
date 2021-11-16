@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import dataJson from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 const Neutral = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle title={data[7]} subTitle={data[8]} content={data[9]} />

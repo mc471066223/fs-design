@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import SvgIcon from '@/components/svgIcon';
 import style from './index.module.scss';
 function Index() {
-  const [data, setData] = useState(dataJson);
   const resultList = [
     data[44],
     data[45],

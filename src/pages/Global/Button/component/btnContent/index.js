@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { dataJson, btnList, strokeList, grownList } from '../../data';
+import React from 'react';
+import { data, btnList, strokeList, grownList } from '../../data';
 import BasicTitle from '@/components/BasicTitle';
-import BtnComponent from '../btnComponent';
+import BtnComponent from '../BtnComponent';
 import cha from "@/assets/images/Global/Space/cha.png";
 import gou from "@/assets/images/Global/Space/gou.png";
 import SvgIcon from '@/components/svgIcon';
 import style from './index.module.scss';
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   const titleList = ['默认', 'Hover', 'Processing', 'Disabled'];
   return (
     <div>

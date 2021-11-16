@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '色彩 Color',
   '用色比例、中性色、辅助色、主色、文字颜色、按钮颜色、图标颜色、线框颜色、分隔线颜色、背景颜色',
   '用色比例',
@@ -63,4 +63,4 @@ const dataJson = [
   '分隔线颜色',
   '背景颜色'
 ];
-export default dataJson;
+export { data };

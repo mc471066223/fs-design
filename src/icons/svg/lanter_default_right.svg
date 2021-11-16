@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>导航/翻页/右翻页50×50/默认</title>
+    <defs>
+        <filter color-interpolation-filters="auto" id="filter-1">
+            <feColorMatrix in="SourceGraphic" type="matrix" values="0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 0 1.000000 0 0 0 1.000000 0"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-165.000000, -242.000000)">
+            <g id="编组" transform="translate(165.000000, 242.000000)">
+                <circle id="椭圆形" fill-opacity="0.2" fill="#000000" transform="translate(25.000000, 25.000000) scale(-1, 1) translate(-25.000000, -25.000000) " cx="25" cy="25" r="25"></circle>
+                <g filter="url(#filter-1)" id="常规icon/向左16px">
+                    <g transform="translate(26.000000, 25.001177) scale(-1, 1) translate(-26.000000, -25.001177) translate(14.000000, 13.000000)">
+                        <rect id="矩形" fill="#000000" fill-rule="nonzero" opacity="0" x="0" y="0" width="24" height="23.7176471"></rect>
+                        <path d="M18.3437902,23.6914021 C18.7632856,23.2768008 18.7632856,22.6074166 18.3437902,22.1904991 L8.1774717,12.1427876 L18.3437902,2.09507614 C18.7632856,1.68047486 18.7632856,1.01109067 18.3437902,0.594173167 C17.9242948,0.177255667 17.247009,0.179571888 16.82517,0.594173167 L6.45730625,10.8410786 C6.09639959,11.1977747 5.91360272,11.6702811 5.91360272,12.1427876 C5.91360272,12.6152941 6.09639959,13.0854844 6.45730625,13.4444967 L16.82517,23.6914021 C17.2446654,24.1060033 17.9266384,24.1060033 18.3437902,23.6914021 Z" id="路径" fill="#F7F7F7" fill-rule="nonzero"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

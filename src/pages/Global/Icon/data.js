@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '图标 Icon',
   '画图规范、轮廓线与模版、上传规范、图标类型',
   '画图规范',
@@ -27,4 +27,4 @@ const dataJson = [
   '线面',
   '社交图标'
 ];
-export { dataJson };
+export { data };

@@ -1,11 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import PaginationCom from './component/index';
 import style from './index.module.scss';
-
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div className={style.pagintaion}>
       <BasicTitle title={data[7]} content={data[8]} />

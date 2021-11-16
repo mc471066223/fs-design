@@ -1,0 +1,180 @@
+@import '../../../../../styles/common.module.scss';
+.circleBable {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  &_title {
+    width: 39px;
+    line-height: $lh24;
+    color: $color64;
+    font-size: $font14;
+    font-family: MicrosoftYaHei;
+  }
+  &_content {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    padding: 2px 16px;
+    background: #ebebf0;
+    border-radius: 13px;
+    font-family: OpenSans;
+    color: #2d324a;
+    line-height: 22px;
+    i {
+      font-size: 12px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.lableSquare {
+  display: flex;
+  align-items: center;
+  &_box {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-right: 80px;
+    &_text {
+      padding: 8px 12px;
+      line-height: 20px;
+      color: $color19;
+      font-family: OpenSans;
+      border: 1px solid #cccccc;
+      border-radius: 2px;
+      &_blue {
+        color: #0060bf;
+      }
+      &_last {
+        color: #19191a;
+        font-family: OpenSans-Semibold, OpenSans;
+        font-weight: 600;
+        border: 2px solid #646466;
+      }
+    }
+    &_content {
+      position: absolute;
+      top: 46px;
+      line-height: $lh24;
+      font-size: $font14;
+      color: $color64;
+      white-space: nowrap;
+      font-family: MicrosoftYaHei;
+    }
+  }
+}
+
+.productLabel {
+  display: flex;
+  align-items: center;
+  &_box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: $lh20;
+    margin-right: 40px;
+    &_item {
+      display: flex;
+      align-items: center;
+      height: 46px;
+      padding: 13px 14px;
+      border-radius: 2px;
+      font-size: 13px;
+      border: 1px solid #cccccc;
+      box-sizing: border-box;
+      &_text {
+        margin-left: 12px;
+      }
+      &_extraText {
+        font-family: OpenSans-Semibold, OpenSans;
+        font-weight: 600;
+      }
+      &_extraBorder {
+        border: 2px solid #646466;
+      }
+    }
+    &_content {
+      margin-top: 10px;
+      line-height: $lh24;
+      color: $color64;
+      font-size: $font14;
+      font-family: MicrosoftYaHei;
+    }
+  }
+}
+
+.QAList {
+  display: flex;
+  &_item {
+    padding: 2px 16px;
+    line-height: 22px;
+    color: #2d324a;
+    margin-right: 8px;
+    font-family: OpenSans;
+    background: #e2e2ec;
+    border-radius: 13px;
+  }
+  &_item:first-child {
+    color: $colorff;
+    background-color: #2d324a;
+  }
+  &_item:last-child {
+    color: #0060bf;
+  }
+}
+
+.logo {
+  display: flex;
+  &_nine {
+    position: relative;
+    margin-right: 49px;
+    &_number {
+      position: absolute;
+      font-size: 12px;
+      right: -8px;
+      top: -11px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 9px;
+      background-color: $colorc0;
+    }
+  }
+  &_ninety {
+    position: relative;
+    margin-right: 49px;
+    &_number {
+      position: absolute;
+      font-size: 12px;
+      right: -8px;
+      top: -11px;
+      width: 18px;
+      height: 18px;
+      line-height: 18px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 9px;
+      background-color: $colorc0;
+    }
+  }
+  &_text {
+    display: flex;
+    align-items: center;
+    :first-child {
+      width: 16px;
+      height: 16px;
+      border-radius: 3px;
+      background-color: $colorc0;
+      margin-right: 10px;
+    }
+    :last-child{
+      color: $color19;
+    }
+  }
+  i {
+    font-size: 20px;
+  }
+}

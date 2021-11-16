@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import style from './index.module.scss';
 const name = ['名称', '实线', '虚线'];
 const slim = ['名称', '1px', '1px'];
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle pageTitle={data[0]} content={data[1]} styleClass={{ marginBottom: '80px' }} />

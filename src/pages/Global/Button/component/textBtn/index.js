@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
-import { dataJson } from '../../data';
+import React from 'react';
+import { data } from '../../data';
 import BasicTitle from '@/components/BasicTitle';
 import style from './index.module.scss';
 
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   const list = ['Default', 'Link#19191a', 'Link#19191a', 'Link#19191a'];
   const newList = ['Hover', 'Link#19191a', 'Link#0060bf', 'Link#0060bf'];
   return (

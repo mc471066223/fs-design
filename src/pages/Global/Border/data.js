@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '边框 Border',
   '边框尺寸、边框适用场景',
   '边框尺寸',
@@ -20,4 +20,4 @@ const dataJson = [
   '标签'
 ];
 
-export { dataJson };
+export { data };

@@ -1,12 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
 import style from './index.module.scss';
-import { dataJson } from '../../data';
+import { data} from '../../data';
 import UploadCom from '@/components/Upload';
 import InputCom from '@/components/Input';
 import bg from '@/assets/images/Global/Shadow/bg.png';
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle title={data[5]} content={data[6]} styleClass={{ marginBottom: '40px' }} />

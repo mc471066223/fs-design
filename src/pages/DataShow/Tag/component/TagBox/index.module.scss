@@ -1,0 +1,40 @@
+@import '../../../../../styles/common.module.scss';
+.BadgeList {
+  display: flex;
+  margin-bottom: 40px;
+  &_box {
+    &_content {
+      width: 320px;
+      height: 178px;
+      background: $colorff;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+      margin-right: 100px;
+      position: relative;
+      &_text {
+        padding: 3px 12px;
+        font-size: 12px;
+        font-family: OpenSans;
+        line-height: 18px;
+        position: absolute;
+      }
+    }
+  }
+  &_bottom {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    &_item {
+      display: flex;
+      align-items: center;
+      :first-child{
+        width: 16px;
+        height: 16px;
+        border-radius: 3px;
+        margin-right: 10px;
+      }
+    }
+   :last-child{
+      margin-right: 20px;
+    }
+  }
+}

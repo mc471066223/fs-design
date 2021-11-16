@@ -1,0 +1,80 @@
+@import '../../../../../styles/common.module.scss';
+.box {
+  width: 1281px;
+  height: 864px;
+  background: $colore5;
+  border-radius: 1px;
+  padding: 48px 40px;
+  &_top {
+    display: flex;
+    height: 371px;
+    margin-bottom: 20px;
+    background-color: $colorff;
+    &_content {
+      padding: 102px 40px;
+      position: relative;
+      word-break: break-all;
+      &_text {
+        line-height: $lh30;
+        color: $color19;
+        font-size: $font20;
+        font-family: OpenSans-Semibold, OpenSans;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      &_text::after {
+        content: '';
+        position: absolute;
+        right: -10px;
+        top: 174px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid $colorff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      :last-child {
+        line-height: $lh20;
+        color: $color64;
+        font-size: 13px;
+        font-family: OpenSans;
+      }
+    }
+  }
+  &_bottom {
+    display: flex;
+    height: 371px;
+    background-color: $colorff;
+    &_content {
+      padding: 102px 40px;
+      position: relative;
+      word-break: break-all;
+      &_text {
+        line-height: $lh30;
+        color: $color19;
+        font-size: $font20;
+        font-family: OpenSans-Semibold, OpenSans;
+        font-weight: 600;
+        margin-bottom: 16px;
+      }
+      &_text::after {
+        content: '';
+        position: absolute;
+        left: -10px;
+        top: 174px;
+        transform: rotate(-180deg);
+        width: 0;
+        height: 0;
+        border-left: 10px solid $colorff;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+      }
+      :last-child {
+        line-height: $lh20;
+        color: $color64;
+        font-size: 13px;
+        font-family: OpenSans;
+      }
+    }
+  }
+}

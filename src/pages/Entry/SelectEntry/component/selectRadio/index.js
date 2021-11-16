@@ -1,10 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { dataJson as data } from '../../data';
 import RadioCom from './component/index';
-
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle pageTitle={data[0]} content={data[1]} styleClass={{ marginBottom: '80px' }} />
@@ -17,7 +15,7 @@ const Index = () => {
       <BasicTitle subTitle={data[10]} />
       <RadioCom type={1} />
       <BasicTitle subTitle={data[11]} subTitleClass={{ marginTop: '40px' }} />
-      <RadioCom type={1} disabled={true}/>
+      <RadioCom type={1} disabled={true} />
     </div>
   );
 };

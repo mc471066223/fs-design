@@ -1,11 +1,10 @@
 import React from 'react';
-import { dataJson } from '../../data';
+import { dataJson as data} from '../../data';
 import BasicTitle from '@/components/BasicTitle';
 import UploadCom from '@/components/Upload';
 import uploadImg from '@/assets/images/Upload/upload_bg.png';
 import SvgIcon from '@/components/svgIcon';
 import style from './index.module.scss';
-const data = dataJson;
 const Index = () => {
   return (
     <div>

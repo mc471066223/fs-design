@@ -1,15 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Plist, box1, box2, box3, box4 } from './data';
 import BasicTitle from '@/components/BasicTitle';
 import style from './index.module.scss';
 import layoutbg from '@/assets/images/Global/Layout/layoutbg.png';
 function Layout() {
-  const [pContent, setPContent] = useState(Plist);
-  const [boxContent1, setBox1] = useState(box1);
-  const [boxContent2, setBox2] = useState(box2);
-  const [boxContent3, setBox3] = useState(box3);
-  const [boxContent4, setBox4] = useState(box4);
-
   return (
     <div>
       <BasicTitle
@@ -19,13 +13,13 @@ function Layout() {
       <div className={style.page_content}>
         <BasicTitle title="页面构成" content="设计师理解的页面构成，内容+间距" subTitle="盒子理论">
           <div className={style.page_content_p}>
-            {pContent && pContent.map((item, index) => <p key={index}>{item}</p>)}
+            {Plist && Plist.map((item, index) => <p key={index}>{item}</p>)}
           </div>
         </BasicTitle>
         <div className={style.page_content_fx1}>
           <div className={style.page_content_fx1_box}>
-            {boxContent1 &&
-              boxContent1.map((item, index) => {
+            {box1 &&
+              box1.map((item, index) => {
                 return (
                   <div
                     key={index}
@@ -43,8 +37,8 @@ function Layout() {
         <div className={style.page_content_fx2}>
           <div className={style.page_content_fx2_box}>
             <div className={style.page_content_fx2_border}>
-              {boxContent2 &&
-                boxContent2.map((item, index) => {
+              {box2 &&
+                box2.map((item, index) => {
                   return (
                     <div
                       key={index}
@@ -134,8 +128,8 @@ function Layout() {
         />
         <div className={style.page_content_fx6}>
           <div className={style.page_content_fx6_box}>
-            {boxContent3 &&
-              boxContent3.map((item, index) => {
+            {box3 &&
+              box3.map((item, index) => {
                 return (
                   <span key={index} className={style.page_content_fx6_item}>
                     {item}
@@ -144,8 +138,8 @@ function Layout() {
               })}
           </div>
           <div className={style.page_content_fx6_box1}>
-            {boxContent4 &&
-              boxContent4.map((item, index) => {
+            {box4 &&
+              box4.map((item, index) => {
                 return (
                   <span key={index} className={style.page_content_fx6_item2}>
                     {item}

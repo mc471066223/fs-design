@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '按钮Button',
   '主要按钮、次要按钮、特殊按钮、文字按钮、图标按钮、按钮排版',
   '主要按钮',
@@ -366,4 +366,4 @@ const lightGreyList = [
   }
 ];
 
-export { dataJson, btnList, strokeList, grownList, greyList, lightGreyList };
+export { data, btnList, strokeList, grownList, greyList, lightGreyList };

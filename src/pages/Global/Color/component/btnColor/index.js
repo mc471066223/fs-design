@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import dataJson from '../../data';
+import { data } from '../../data';
 import BoxList from '@/pages/Global/Component/BoxList';
 import style from "./index.module.scss";
 const BtnColor = () => {
-  const [data, setData] = useState(dataJson);
   const textList = [data[36], data[37], [data[38]," "], data[39]];
   const bgList = ['#C00000', '#9B0912', '#4B4B4D', '#CCCCCC'];
 

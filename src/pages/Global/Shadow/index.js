@@ -1,6 +1,6 @@
 import React from 'react';
-import ShadowCom from './component/shadowCom';
-import ShadowNumber from './component/shadowNumber';
+import ShadowCom from './component/ShadowCom';
+import ShadowNumber from './component/ShadowNumber';
 function Shadow() {
   return (
     <div>

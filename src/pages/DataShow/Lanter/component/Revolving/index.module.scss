@@ -1,0 +1,146 @@
+.lanter_box {
+  display: flex;
+  align-items: center;
+  &_left {
+    margin-right: 7px;
+  }
+  &_center {
+    position: relative;
+    &_content {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 160px;
+      left: 74px;
+      color: #ffffff;
+      font-family: OpenSans;
+      line-height: 22px;
+      :first-child {
+        width: 4px;
+        height: 4px;
+        background: #ffffff;
+        border-radius: 50%;
+        margin-right: 5px;
+      }
+    }
+    &_bottom {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 180px;
+      left: 74px;
+      color: #ffffff;
+      font-family: OpenSans;
+      line-height: 22px;
+      :first-child {
+        width: 4px;
+        height: 4px;
+        background: #ffffff;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-bottom: 20px;
+      }
+      :last-child {
+        width: 243px;
+      }
+    }
+  }
+  &_center {
+    margin-right: 7px;
+  }
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-33px);
+  &_first {
+    width: 20px;
+    height: 8px;
+    background: #ffffff;
+    margin-right: 10px;
+    border-radius: 3px;
+  }
+  &_item {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.4);
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+  &_title {
+    position: absolute;
+    font-size: 14px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    color: #ffffff;
+    top: 95px;
+    left: 75px;
+    div {
+      line-height: 22px;
+    }
+  }
+}
+
+.lanter_default_left,
+.lanter_default_right {
+  position: absolute;
+  top: 132px;
+  svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+.lanter_default_left {
+  left: 40px;
+}
+
+.lanter_default_right {
+  right: 40px;
+}
+
+.lanter_content {
+  width: 1200px;
+  margin-top: 40px;
+  position: relative;
+  &_left,
+  &_right {
+    position: absolute;
+    top: 115px;
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  &_left {
+    left: 90px;
+  }
+  &_right {
+    right: 90px;
+  }
+  &_dots {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    margin-left: -54px;
+    &_item {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      margin-right: 10px;
+      background: rgba(255, 255, 255, 0.4);
+    }
+    &_extra {
+      width: 20px;
+      height: 8px;
+      background: #ffffff;
+      border-radius: 4px;
+    }
+  }
+}

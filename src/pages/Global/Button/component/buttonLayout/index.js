@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson } from '../../data';
+import { data } from '../../data';
 import SvgIcon from '@/components/svgIcon';
 import style from './index.module.scss';
 
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   return (
     <div>
       <BasicTitle title={data[25]} content={data[26]} />

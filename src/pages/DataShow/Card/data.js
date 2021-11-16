@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '卡片 Card',
   '产品展示卡片、气泡卡片、带标签的三栏卡片、首页community展示卡片、左图右文/左文右图、图文结合、一级分类、图标卡片',
   '产品展示卡片',
@@ -11,6 +11,26 @@ const dataJson = [
   '气泡需要考虑弹出方向，通常情况下，气泡不要超出页面内容宽度（安全宽度）。',
   '气泡宽度300px，内容文字13px、行高20px、内容距矩形边框上下左右间距为20px。',
   '文字和icon之间的间距为8px。',
+  '带标签的三栏卡片',
+  '可承载更多内容。',
+  'IT Company Upgrades to Wi-Fi 6 Wireless Network to Fully Cover 1,000 Employees',
+  '首页community 展示卡片',
+  '可配置定义更丰富的内容展示。',
+  'Ixia RFC2544 Test for S5860-20SQ Switch',
+  '左图右文/左文右图',
+  '图片与文字结合，清晰的阐释文字内容意义。',
+  'Guaranteed Quality',
+  'FS partners with many top-tier manufactures who emphasize cutting edge production techniques, technology innovations,and management ability.After production, items are inspected in our state-of-the-art testing facility.Every item is tested by a skilled technician for compatibility and stability before being placed in an order.FS products are backed by international certifications such as ISO,ROHS, CE, FCC, and more.',
+  '图文结合',
+  '精简的文字和准确的图片相结合。',
+  '图标卡片',
+  '通过图标向用户提示。',
+  'Online Chat',
+  'We are here to help. Message us now for a quick response.',
+  'High Reliability',
+  'All products meet or even exceed the internationally recognized industrial standards like ISO9001, RoHS, Reach',
+  'Online Chat',
+  'We are here to help. Message us now for a quick response.'
 ];
 const cardList = [
   {
@@ -49,8 +69,4 @@ const cardList = [
   }
 ];
 
-const tooltipTitle = [
-  'The item will be shipped from Asia global warehouse via Global Shipping Program (GSP). Import fees included at the time of purchase plus customs clearance are handled by FS. Sales tax will be included at checkout. Learn more'
-];
-
-export { dataJson, cardList };
+export { data, cardList };

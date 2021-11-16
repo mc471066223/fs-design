@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '页面导航 Website Navigation',
   '弹出式导航、侧边导航',
   '弹出式导航',
@@ -9,4 +9,4 @@ const dataJson = [
   '很多菜单时使用，建议菜单多于6项时使用，可以承载多个层级，但建议1-3个层级。'
 ];
 
-export { dataJson };
+export { data };

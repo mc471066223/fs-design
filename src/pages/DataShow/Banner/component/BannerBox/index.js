@@ -1,9 +1,7 @@
 import React from 'react';
 import style from './index.module.scss';
-import { dataJson } from '../../data';
-
+import { dataJson as data } from '../../data';
 const Index = props => {
-  const data = dataJson;
   const { type = 0 } = props;
   return (
     <div>

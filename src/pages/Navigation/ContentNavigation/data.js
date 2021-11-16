@@ -1,4 +1,4 @@
-const dataJson = [
+const data = [
   '内容导航 Content Navigation',
   '面包屑、分页、步骤条、标签页、下拉菜单',
   '面包屑',
@@ -54,4 +54,4 @@ const dataJson = [
   '+1 (888) 468 7419'
 ];
 
-export { dataJson };
+export { data };

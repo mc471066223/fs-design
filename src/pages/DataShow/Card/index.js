@@ -1,16 +1,22 @@
 import React from 'react';
-import { cardList } from './data';
 import BoxCard from './component/BoxCard';
 import BubbleCard from './component/BubbleCard';
-import style from './index.module.scss';
+import LabelCard from './component/labelCard';
+import CommunityCard from './component/CommunityCard';
+import DirectionCard from './component/DirectionCard';
+import Combining from './component/Combining';
+import IconCard from './component/IconCard';
 
 function Index() {
   return (
     <div>
-      <div className={style.BoxCard}>
-        <BoxCard list={cardList} />
-      </div>
+      <BoxCard />
       <BubbleCard />
+      <LabelCard />
+      <CommunityCard />
+      <DirectionCard />
+      <Combining />
+      <IconCard />
     </div>
   );
 }

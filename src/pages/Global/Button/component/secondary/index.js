@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import BasicTitle from '@/components/BasicTitle';
-import { dataJson, greyList, lightGreyList } from '../../data';
-import BtnComponent from '../btnComponent';
+import { data, greyList, lightGreyList } from '../../data';
+import BtnComponent from '../BtnComponent';
 import style from './index.module.scss';
 
 const Index = () => {
-  const [data, setData] = useState(dataJson);
   const titleList = ['默认', 'Hover', 'Processing', 'Disabled'];
   return (
     <div>

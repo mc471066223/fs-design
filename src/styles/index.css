@@ -28,6 +28,12 @@
   padding-left: 10px;
 
 }
+.ant-menu-title-content{
+  display: flex;
+  align-items: center;
+  width: 320px !important;
+  height: 46px;
+}
 
 .ant-menu-item-selected>.ant-menu-title-content {
   background-color: #FFF;
