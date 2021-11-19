@@ -1,0 +1,209 @@
+.box {
+  width: 1280px;
+  height: 712px;
+  background-color: #e5e5e5;
+  padding: 48px 40px;
+  &_top {
+    width: 100%;
+    height: 208px;
+    padding: 16px 24px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    &_left {
+      display: flex;
+    }
+    img {
+      width: 120px;
+      height: 120px;
+      margin-right: 20px;
+    }
+    &_content {
+      &_text {
+        width: 520px;
+        color: #19191a;
+        line-height: 22px;
+        font-size: 14px;
+        font-weight: 600;
+        font-family: OpenSans-Semibold, OpenSans;
+      }
+      &_desc {
+        display: flex;
+        align-items: center;
+        line-height: 20px;
+        color: #646466;
+        font-size: 13px;
+        font-family: OpenSans;
+        margin: 12px 0;
+        :first-child {
+          margin-right: 12px;
+        }
+        :last-child {
+          color: #89898c;
+        }
+      }
+      &_track {
+        display: flex;
+        align-items: center;
+        color: #89898c;
+        line-height: 20px;
+        font-size: 13px;
+        font-family: OpenSans;
+        i {
+          font-size: 12px;
+          margin-right: 8px;
+        }
+      }
+      &_track:last-child {
+        margin-top: 2px;
+      }
+    }
+    &_right {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &_money {
+        line-height: 24px;
+        color: #19191a;
+        font-size: 16px;
+        font-family: OpenSans-Semibold, OpenSans;
+        font-weight: 600;
+        margin-bottom: 12px;
+      }
+      &_box {
+        display: flex;
+        align-items: center;
+        width: 80px;
+        height: 38px;
+        padding: 8px 0;
+        background: #ffffff;
+        border-radius: 2px;
+        border: 1px solid #cccccc;
+        margin-bottom: 20px;
+        &_number {
+          line-height: 22px;
+          color: #19191a;
+          font-size: 14px;
+          font-family: OpenSans-Semibold, OpenSans;
+          font-weight: 600;
+          margin-left: 27px;
+        }
+        &_icon {
+          display: flex;
+          flex-direction: column;
+          margin-left: 25px;
+          i {
+            font-size: 12px;
+          }
+          :last-child {
+            opacity: 0.3;
+            color: #000000;
+          }
+        }
+        &_delete {
+          i {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+  &_bottom {
+    width: 316px;
+    height: 368px;
+    background: #ffffff;
+    margin-top: 40px;
+    padding: 16px 28px;
+    &_title {
+      line-height: 24px;
+      color: #232323;
+      font-size: 16px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+    &_subTitle,
+    &_subTitle1 {
+      display: flex;
+      color: #89898c;
+      line-height: 22px;
+      justify-content: space-between;
+      font-size: 14px;
+      font-family: Helvetica;
+      margin-bottom: 3px;
+    }
+    &_subTitle1 {
+      margin-bottom: 16px;
+    }
+    &_line {
+      width: 100%;
+      height: 1px;
+      border: 1px solid #e5e5e5;
+    }
+    &_total {
+      display: flex;
+      justify-content: space-between;
+      line-height: 30px;
+      color: #232323;
+      font-size: 20px;
+      font-family: OpenSans-Semibold, OpenSans;
+      font-weight: 600;
+      margin-top: 15px;
+    }
+    &_desc {
+      line-height: 22px;
+      color: #89898c;
+      font-size: 14px;
+      font-family: Helvetica;
+    }
+    &_checkout,
+    &_create {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 42px;
+      color: #fff;
+      background-color: #d20000;
+      border-radius: 3px;
+      font-size: 12px;
+      font-family: Helvetica;
+      margin-top: 24px;
+      i {
+        color: #fff;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+      :last-child {
+        line-height: 18px;
+      }
+    }
+    &_create {
+      background: none;
+      border: 1px solid #cccccc;
+      color: #19191a;
+      i {
+        color: #000000;
+        font-size: 14px;
+        margin-right: 5px;
+      }
+    }
+    &_cart {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-family: Helvetica;
+      color: #0063c7;
+      line-height: 14px;
+      margin-top: 8px;
+      :first-child {
+        margin-right: 20px;
+      }
+    }
+  }
+  &_money {
+    width: 382px;
+    height: 188px;
+  }
+}

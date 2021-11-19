@@ -1,0 +1,30 @@
+.box_video,
+.box_quick,
+.box_edit,
+.box_alert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 880px;
+  height: 120px;
+  line-height: 24px;
+  color: #646464;
+  background: #e5e5e5;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.box_quick{
+  width: 750px;
+}
+
+.box_edit{
+  width: 680px;
+}
+.box_alert{
+  width: 480px;
+  margin-bottom: 80px;
+}

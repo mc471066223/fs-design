@@ -6,11 +6,25 @@
   "description": "",
   "glyphs": [
     {
+      "icon_id": "25672825",
+      "name": "Share-email",
+      "font_class": "fs_2021111201icon",
+      "unicode": "f167",
+      "unicode_decimal": 61799
+    },
+    {
+      "icon_id": "25542647",
+      "name": "back",
+      "font_class": "fs_2021110801icon",
+      "unicode": "f166",
+      "unicode_decimal": 61798
+    },
+    {
       "icon_id": "25467551",
       "name": "往右",
       "font_class": "fs_2021110401icon",
-      "unicode": "f473",
-      "unicode_decimal": 62579
+      "unicode": "f165",
+      "unicode_decimal": 61797
     },
     {
       "icon_id": "24763414",

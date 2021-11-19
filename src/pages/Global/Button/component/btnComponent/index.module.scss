@@ -32,10 +32,17 @@
       font-family: MicrosoftYaHei;
     }
     &_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
       width: 117px;
       height: 38px;
       border-radius: 3px;
       margin-bottom: 10px;
+      svg{
+        width: 16px;
+        height: 16px;
+      }
     }
   }
 }

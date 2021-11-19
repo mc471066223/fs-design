@@ -1,0 +1,35 @@
+.box {
+  margin-top: 80px;
+  &_content {
+    width: 1200px;
+    height: 432px;
+    padding: 40px 284px 104px;
+    border: 1px solid #cccccc;
+    display: flex;
+    flex-wrap: wrap;
+    &_item {
+      width: 204px;
+      height: 140px;
+      background: #cccccc;
+      margin-right: 9px;
+    }
+    &_item:nth-child(3n) {
+      margin-right: 0;
+    }
+    &_svg {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 117px;
+      height: 38px;
+      background: rgba(75, 75, 77, 0.6);
+      border-radius: 3px;
+      margin-left: 257px;
+      margin-top: 24px;
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.box {
+  display: flex;
+  width: 1200px;
+  padding-top: 20px;
+  padding-left: 32px;
+  padding-bottom: 25px;
+  margin-top: 40px;
+  border-bottom: 1px solid #e5e5e5;
+  &_extra {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+  &_left {
+    display: flex;
+    align-items: center;
+    height: 46px;
+    margin-right: 128px;
+    &_text {
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      margin-right: 12px;
+      text-align: center;
+      color: #ffffff;
+      font-size: 20px;
+      font-family: OpenSans;
+      border-radius: 50%;
+      background: linear-gradient(141deg, #a6aab7 0%, #868a93 100%);
+    }
+    &_box {
+      font-family: OpenSans;
+      &_name {
+        font-size: 16px;
+        line-height: 24px;
+        color: #19191a;
+      }
+      &_area {
+        line-height: 22px;
+        font-size: 14px;
+        color: #646466;
+      }
+    }
+  }
+  &_right {
+    display: flex;
+    flex-direction: column;
+    &_rate {
+      display: flex;
+      align-items: center;
+      height: 22px;
+      margin-bottom: 8px;
+      &_item {
+        margin-right: 4px;
+        svg {
+          width: 16px;
+          height: 16px;
+        }
+      }
+      &_number {
+        margin-left: 4px;
+        color: #646466;
+      }
+    }
+    &_commnets {
+      font-size: 14px;
+      font-family: OpenSans;
+      color: #646466;
+      line-height: 22px;
+    }
+  }
+  &_circle {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    margin-bottom: 8px;
+    &_item {
+      width: 100px;
+      height: 100px;
+      background: #e5e5e5;
+      margin-right: 12px;
+    }
+    :last-child {
+      margin-right: 0;
+    }
+  }
+  &_status {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-family: OpenSans;
+    color: #646466;
+    line-height: 22px;
+    margin-bottom: 13px;
+    &_svg {
+      display: flex;
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+    }
+  }
+  &_like {
+    display: flex;
+    align-items: center;
+    color: #646466;
+    &_point,
+    &_message {
+      display: flex;
+      align-items: center;
+      margin-right: 27px;
+      i {
+        font-size: 14px;
+        margin-right: 5px;
+      }
+      &_number {
+        line-height: 13px;
+      }
+    }
+    &_message {
+      i {
+        font-size: 16px;
+        margin-right: 5px;
+      }
+    }
+  }
+}

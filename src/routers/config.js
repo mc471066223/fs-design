@@ -142,9 +142,48 @@ const config = [
             path: '/data/lanter',
             title: '走马灯 Revolving lanter',
             component: lazy(() => import('@/pages/DataShow/Lanter'))
+          },
+          {
+            path: '/data/gradeEvaluation',
+            title: '等级评估 Grade Evaluation',
+            component: lazy(() => import('@/pages/DataShow/Evaluation'))
+          },
+          {
+            path: '/data/dataFormat',
+            title: '数据格式 Data Format',
+            component: lazy(() => import('@/pages/DataShow/Format'))
           }
         ]
-      }
+      },
+      {
+        path: '/feedBack',
+        title: '反馈',
+        component: BlankLayout,
+        routes: [
+          {
+            path: '/feedBack/layer',
+            title: '弹出层 Pop-up Layer',
+            component: lazy(() => import('@/pages/Feed/PopupLay'))
+          }
+          ,
+          {
+            path: '/feedBack/message',
+            title: '信息提示 Message Notification',
+            component: lazy(() => import('@/pages/Feed/Notification'))
+          },
+          {
+            path: '/feedBack/load',
+            title: '加载 Load',
+            component: lazy(() => import('@/pages/Feed/Load'))
+          }
+          ,
+          {
+            path: '/feedBack/abnormal',
+            title: '异常 Abnormal',
+            component: lazy(() => import('@/pages/Feed/Abnormal'))
+          }
+        ]
+      },
     ]
   }
 ];

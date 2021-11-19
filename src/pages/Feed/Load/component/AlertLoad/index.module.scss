@@ -1,0 +1,134 @@
+.box {
+  margin-top: 80px;
+  &_content {
+    width: 1200px;
+    height: 426px;
+    padding: 40px 284px;
+    border: 1px solid #cccccc;
+    background: rgba(0, 0, 0, 0.3);
+    &_header {
+      width: 632px;
+      height: 73px;
+      background: #19191a;
+      opacity: 0.3;
+      margin-bottom: 10px;
+    }
+    &_container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+      position: relative;
+      &_slider {
+        width: 157px;
+        height: 180px;
+        background: #19191a;
+        opacity: 0.3;
+        margin-right: 10px;
+      }
+      &_content {
+        width: 465px;
+        height: 180px;
+        padding: 40px 28px;
+        background: #19191a;
+        opacity: 0.3;
+      }
+      &_item {
+        width: 409px;
+        height: 20px;
+        background-color: #19191a;
+        opacity: 0.3;
+        margin-bottom: 20px;
+        div:last-child {
+          width: 160px;
+        }
+      }
+      &_item:nth-child(3) {
+        width: 160px;
+      }
+      &_svg {
+        position: absolute;
+        left: 130px;
+        top: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 372px;
+        height: 170px;
+        background-color: #fff;
+        border-radius: 3px;
+        &_box {
+          width: 60px;
+          height: 60px;
+          background: #89898c;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+      }
+      &_extraSvg {
+        position: absolute;
+        left: 130px;
+        top: 5px;
+        width: 372px;
+        height: 170px;
+        background-color: #fff;
+        border-radius: 3px;
+        &_item {
+          width: 256px;
+          height: 20px;
+          margin: 30px 0 20px 24px;
+          background: #e5e5e5;
+        }
+        &_item:nth-child(2) {
+          margin-top: 0;
+        }
+        &_box {
+          position: absolute;
+          left: 156px;
+          top: 54px;
+          width: 60px;
+          height: 60px;
+          background: #89898c;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          svg {
+            width: 24px;
+            height: 24px;
+          }
+        }
+        &_right {
+          position: absolute;
+          top: 14px;
+          right: 18px;
+          width: 20px;
+          height: 20px;
+          background: #e5e5e5;
+        }
+        &_bottom {
+          position: absolute;
+          bottom: 20px;
+          right: 18px;
+          width: 60px;
+          height: 20px;
+          background: #e5e5e5;
+        }
+      }
+    }
+    &_footer {
+      width: 632px;
+      height: 73px;
+      background: #19191a;
+      opacity: 0.3;
+    }
+  }
+}
+.extraBox {
+  margin-top: 40px;
+}

@@ -1,0 +1,19 @@
+.loading {
+  display: flex;
+  align-items: center;
+  &_Box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 117px;
+    height: 38px;
+    opacity: 0.6;
+    margin-right: 20px;
+    border-radius: 3px;
+    color: #fff;
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.template {
+  width: 737px;
+  height: 301px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  img {
+    width: 56px;
+    height: 27px;
+    margin-top: 40px;
+    margin-left: 151px;
+  }
+  &_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 31px;
+    &_box {
+      display: flex;
+      flex-direction: column;
+    }
+    &_title {
+      line-height: 34px;
+      color: #19191a;
+      font-size: 30px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      margin-bottom: 24px;
+    }
+    &_content,
+    &_desc {
+      font-size: 13px;
+      font-family: PingFangSC-Regular, PingFang SC;
+      font-weight: 400;
+      color: #19191a;
+      margin-bottom: 12px;
+      line-height: 18px;
+    }
+    &_desc {
+      display: flex;
+      align-items: center;
+    }
+    &_desc div:nth-child(2) {
+      color: #0060bf;
+      margin: 0 5px;
+    }
+    &_desc div:nth-child(4) {
+      color: #0060bf;
+      margin-left: 5px;
+    }
+  }
+}
+
+.loadFail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 737px;
+  height: 301px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+  img {
+    width: 411px;
+    height: 179px;
+  }
+}

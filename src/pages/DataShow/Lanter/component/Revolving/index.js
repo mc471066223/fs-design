@@ -45,6 +45,14 @@ const Index = () => {
       </div>
       <div className={style.lanter_content}>
         <img src={content} alt="" />
+        <div className={style.lanter_content_title}>
+          <div>400G/200G High Capacity</div>
+          <div>Connectivity Solutions</div>
+        </div>
+        <div className={style.lanter_content_subTitle}>
+          <div>Provide solutions up to 400 Gbps aggregate,</div>
+          <div>deal with increasing data traffic and maximize network value</div>
+        </div>
         <div className={style.lanter_content_left}>
           <SvgIcon iconName="lanter_default_left" />
         </div>
@@ -62,6 +70,10 @@ const Index = () => {
                 ].join(' ')}></div>
             );
           })}
+        </div>
+        <div className={style.lanter_content_more}>
+          <div>Learn more</div>
+          <i className="iconfont iconfs_2020091147icon"/>
         </div>
       </div>
     </div>

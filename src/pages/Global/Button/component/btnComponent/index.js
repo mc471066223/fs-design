@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from 'antd';
 import style from './index.module.scss';
+import SvgIcon from '@/components/svgIcon';
 const Index = props => {
   const { list } = props;
   return (
@@ -16,17 +16,27 @@ const Index = props => {
                     return (
                       <div key={idx} className={style.btnBox_item}>
                         {ele.loading ? (
-                          <Button
-                            loading={false}
+                          <div
                             className={style.btnBox_item_btn}
                             style={{
                               opacity: ele.percent,
                               color: ele.colorText,
                               backgroundColor: ele.bgcColor,
                               width: '117px'
-                            }}
-                          />
+                            }}>
+                            <SvgIcon iconName="load_load" />
+                          </div>
                         ) : (
+                          // <Button
+                          //   loading={false}
+                          //   className={style.btnBox_item_btn}
+                          //   style={{
+                          //     opacity: ele.percent,
+                          //     color: ele.colorText,
+                          //     backgroundColor: ele.bgcColor,
+                          //     width: '117px'
+                          //   }}
+                          // />
                           <>
                             {ele.stroke ? (
                               <div

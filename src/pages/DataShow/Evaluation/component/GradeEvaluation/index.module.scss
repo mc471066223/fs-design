@@ -1,0 +1,56 @@
+.box {
+  display: flex;
+  align-items: center;
+  svg {
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+  }
+  &_number {
+    font-size: 20px;
+    font-family: OpenSans-Semibold, OpenSans;
+    font-weight: 600;
+    color: #19191a;
+    line-height: 30px;
+    margin-left: 6px;
+  }
+}
+
+.gradeEvaluation {
+  display: flex;
+  align-items: center;
+  line-height: 18px;
+  margin-bottom: 4px;
+  &_line {
+    width: 176px;
+    height: 8px;
+    background: #eeeeee;
+    border-radius: 4px;
+    margin: 0 12px;
+    position: relative;
+    &_zero {
+      background-color: #fdaa01;
+    }
+    &_one {
+      position: absolute;
+      width: 25px;
+      height: 8px;
+      background: #fdaa01;
+      border-radius: 4px;
+    }
+  }
+  &_text {
+    font-size: 12px;
+    font-family: OpenSans;
+    color: #89898c;
+    :first-child {
+      width: 38px;
+    }
+  }
+  &_text:first-child {
+    width: 43px;
+  }
+  &_extraText {
+    color: #19191a;
+  }
+}

@@ -1,5 +1,5 @@
 .main_left_slider {
-  box-shadow: 0 2px 6px 4px rgba(26, 37, 51, 0.31);
+  // box-shadow: 0 2px 6px 4px rgba(26, 37, 51, 0.31);
   width: 360px;
   .main_logo {
     display: flex;
@@ -10,22 +10,17 @@
     background-color: #f7f7f7;
     color: #19191A;
     font-size: 14px;
-    padding: 40px 52px 24px 40px;
+    padding: 40px 52px 0px 40px;
     img {
       width: 76px;
       height: 36px;
     }
     .app_name {
-      // margin-left: 12px;
       vertical-align: text-bottom;
       font-size: 20px;
       font-weight: 400;
-      // color: #fff;
       text-overflow: clip;
       white-space: nowrap;
-      // text-rendering: optimizeLegibility;
-      // -webkit-font-smoothing: antialiased;
-      // -moz-osx-font-smoothing: grayscale;
       background-image: -webkit-linear-gradient(bottom, #13e367, #fff);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -35,7 +30,7 @@
   .main_menu {
     height: calc(100% - 64px);
     overflow: auto;
-    margin-top: -16px;
+    margin-top: 2px;
   }
 
   .ant-menu-submenu-title,
@@ -107,4 +102,8 @@
   max-width: 360px;
   min-width: 360px !important;
   width: 360px;
+}
+
+.menuItem{
+  height: 46px !important; 
 }

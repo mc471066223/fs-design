@@ -40,7 +40,7 @@ const renderMenuItem = target => {
       );
     }
     return (
-      <Menu.Item key={subMenu.path}>
+      <Menu.Item key={subMenu.path} className={style.menuItem}>
         <Link to={subMenu.path}>
           <span>{subMenu.title}</span>
         </Link>

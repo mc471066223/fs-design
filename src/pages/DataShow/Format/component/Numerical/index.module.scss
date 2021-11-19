@@ -1,0 +1,49 @@
+.box {
+  display: flex;
+  width: 1200px;
+  border: 1px solid #e5e5e5;
+}
+
+.Symbol,
+.Use,
+.Example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &_item {
+    width: 268px;
+    height: 40px;
+    line-height: 24px;
+    padding: 8px 106px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    color: #646466;
+    font-family: MicrosoftYaHei;
+  }
+  :last-child {
+    border-bottom: 0;
+  }
+}
+
+.Use {
+  &_item {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    width: 623px;
+  }
+}
+
+.Example {
+  &_item {
+    width: 308px;
+  }
+}
+
+.extra{
+  background-color: #f7f7f7;
+}
+
+.extraText{
+  color: #19191a;
+}

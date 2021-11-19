@@ -107,6 +107,24 @@
   width: 1200px;
   margin-top: 40px;
   position: relative;
+  &_title {
+    position: absolute;
+    top: 36px;
+    left: 190px;
+    color: #ffffff;
+    font-size: 26px;
+    font-family: OpenSans;
+    line-height: 34px;
+  }
+  &_subTitle{
+    position: absolute;
+    top: 137px;
+    left: 195px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: OpenSans;
+    line-height: 24px;
+  }
   &_left,
   &_right {
     position: absolute;
@@ -141,6 +159,20 @@
       height: 8px;
       background: #ffffff;
       border-radius: 4px;
+    }
+  }
+  &_more{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 199px;
+    bottom: 23px;
+    color: #ffffff;
+    font-family: OpenSans;
+    i{
+      margin-top: 2px;
+      font-size: 12px;
+      margin-left: 4px;
     }
   }
 }
